@@ -1,0 +1,715 @@
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media (min-width: 770px) {
+    /*.openNav {
+        display: none;
+    }*/
+    .apollo-div-image {
+        height: 100%;
+    }
+
+    .built-apollo-2 {
+        /*height: 100vh;*/
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .apollo-vector {
+        height: 100vh !important;
+        position: relative;
+        padding-top: 50px;
+    }
+
+    .aesi-container {
+        margin-top: 10%;
+    }
+
+    .aesi-logo img {
+        width: 100%;
+    }
+
+    .aesi-logo {
+        /*display: flex;
+        align-items: center;
+        padding: 0;
+        position: absolute;
+        z-index: 1;
+        top: -170px;*/
+
+        margin-bottom: -17%;
+        z-index: 1;
+    }
+
+    .aesi {
+        /*background-image: url("images/aesi-bg.png");*/
+        height: 100vh;
+        /*background-size: cover;*/
+        /*background-attachment: fixed;*/
+        position: relative;
+        background-color: #F3F3F3;
+        padding-top: 13%;
+
+        margin-top: -122px;
+        margin-bottom: -122px;
+    }
+
+    .apollo-clients {
+        padding-right: 0;
+        margin-left: 5px;
+        padding-left: 0;
+    }
+
+    .changing-text {
+        padding-top: 11%;
+        padding-bottom: 3%;
+        font-size: 45px;
+    }
+
+    .mobile-apollo-vector {
+        display: none;
+    }
+
+    .sample-text .header-left p {
+        margin-top: 150px;
+    }
+
+    .carousel.vertical .item {
+        margin-top: 150px;
+    }
+
+    /*.product {
+        margin-bottom: 50px;
+    }*/
+
+    .container {
+        width: 100%;
+    }
+
+    .sample-text-2 {
+        height: 75%;
+        text-align: center;
+    }
+
+    .sample-text-2 .title-30 {
+        color: #fff !important;
+        font-size: 50px !important;
+        margin-top: 100px;
+    }
+
+    .sidenav {
+        height: 100%;
+        /*text-align: left;*/
+        top: 0;
+        right: 0;
+        padding-bottom: 20px;
+        /*border-radius: 5px;*/
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        transition: all 0.5s ease-in-out;
+    }
+    .sidenav a {
+        padding-left: 35px;
+        padding-top: 3px;
+        /*font-weight: bold;*/
+    }
+
+    .toggle-sidenav {
+        width: 15%;
+    }
+
+    .openNav {
+        position: fixed;
+        cursor: pointer;
+        top: 15px;
+        z-index: 80;
+    }
+
+    .sidenav {
+        z-index: 60;
+    }
+
+    .sidenav span {
+        color: #fff;
+    }
+
+    .apollo-footer .footer-nav, .footer-share {
+        text-align: right;
+    }
+
+    .circle {
+        background-color: rgba(16, 154, 159, 0.54);
+        padding: 25px;
+        border-radius: 500px;
+        width: 510px;
+        height: 490px;
+    }
+
+    .circle-inner {
+        background-color: rgba(16, 154, 159, 0.54);
+        border-radius: 500px;
+        width: 510px;
+        height: 490px;
+    }
+
+    .apollo-tablet-bg {
+        /*height: 1000px;*/
+    }
+
+    .apollo-tablet {
+        background-image: url("../images/apollo-tablet-invert.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 125%;
+    }
+}
+
+@media (max-width: 768px) {
+    .apollo-vector {
+        display: none;
+    }
+
+    .apollo-div {
+        padding: 0 !important;
+    }
+
+    .built-apollo-2 {
+        height: auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .apollo-div-image {
+        height: 50%;
+    }
+
+    .aesi .title-50 {
+        font-size: 32px !important;
+        padding-top: 10%;
+    }
+
+    .aesi p {
+        font-size: 14px !important;
+    }
+
+    .aesi-logo img {
+        width: 60%;
+    }
+
+    .aesi-logo {
+        margin-bottom: -25%;
+        z-index: 2;
+    }
+
+    .aesi {
+        height: auto !important;
+        position: relative;
+        background-color: #F3F3F3;
+        margin-top: -30px;
+        margin-bottom: -30px;
+        z-index: 1;
+        padding: 20% 20px;
+    }
+
+    .aesi-container {
+        margin-top: 0;
+    }
+
+    .skew-bg {
+        height: 60px !important;
+    }
+
+    .card-deck-container {
+        margin-bottom: 0 !important;
+    }
+
+    .apollo-clients {
+        padding-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .client-row {
+        margin-top: 0 !important;
+    }
+
+    .changing-text {
+        display: flex;
+        flex-direction: column;
+        padding: 0 14%;
+    }
+
+    .main-container {
+        padding-bottom: 50px !important;
+    }
+
+    .apollo-button {
+        width: auto !important;
+        padding: 0 20px;
+    }
+
+    .nav li a {
+        display: none;
+    }
+    .carousel {
+        text-align: left;
+    }
+
+    .header-left {
+        text-align: left !important;
+    }
+
+    .apollo-screenshots img {
+        margin-top: 30px;
+    }
+
+    .navbar-header {
+        margin-top: 5px;
+    }
+
+    .sample-text {
+        /*height: 650px;*/
+    }
+
+    .openNav {
+        position: fixed !important;
+        z-index: 50;
+        width: 100%;
+        /*background-color: rgba(255,255,255,0.1);*/
+        border-radius: 0 !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        top: 0;
+        left: 0;
+        height: 50px;
+    }
+
+    #openNav {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .navbar-brand {
+        margin-left: 0;
+        position: absolute;
+        top: -16px;
+    }
+
+    .aas-description, .aas-title {
+        text-align: center !important;
+    }
+
+    .os-description {
+        text-align: center !important;
+    }
+
+    .aesi-title {
+        text-align: center !important;
+    }
+
+    .navbar-brand img {
+        height: 30px;
+        float: left;
+        margin-top: -5px;
+    }
+
+    .navbar-header a {
+        font-size: 20px;
+        letter-spacing: 5px;
+        margin-top: -5px;
+    }
+
+    .sample-text {
+        height: auto !important;
+        padding: 20px !important;
+        background-position: bottom !important;
+        /*test*/
+    }
+
+    .redefine {
+        padding: 50px 10px;
+    }
+
+    .sample-text .header-left p {
+        font-size: 35px !important;
+        margin-top: 50px;
+    }
+
+    .sample-text h3 {
+        text-align: left !important;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .carousel.vertical .item {
+        font-size: 35px !important;
+    }
+
+    .sample-text-sub h4 {
+        font-size: 15px;
+        margin-top: 20px !important;
+        padding: 1px 20px 10px 20px !important;
+    }
+
+    .apollo-vector {
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*height: 100vh;*/
+        /*margin-top: 10%;*/
+        /*display: none;*/
+        padding-top: 20px;
+        height: 0 !important;
+    }
+
+    .apollo-laptop {
+        width: 80px !important;
+        top: 83% !important;
+        left: 39% !important;
+    }
+
+    .our-solutions {
+        padding: 0 !important;
+        height: auto !important;
+        padding-bottom: 50px !important;
+        margin-top: 0 !important;
+    }
+
+    .something-here {
+        flex-direction: column;
+        height: auto !important;
+        padding-bottom: 50px;
+    }
+
+    .something-here b {
+        padding: 0 !important;
+        font-size: 40px !important;
+    }
+
+    .something-here-text {
+        padding: 10px !important;
+        margin-top: 20px;
+    }
+
+    .contfloat {
+        margin-top: 20px;
+    }
+
+    .benefits {
+        height: 100vh !important;
+    }
+
+    .benefits-text {
+        font-size: 30px !important;
+        padding: 40px;
+    }
+
+    .client {
+        margin-top: 25px !important;
+    }
+
+    .above-our-mission .col-md-4 {
+        text-align: center !important;
+        margin-top: 50px;
+    }
+
+    .logistics-automation {
+        margin-top: 0 !important;
+    }
+
+    .sidenav a {
+        font-size: 15px;
+    }
+
+    #closeBtn {
+        padding-right: 20px;
+    }
+
+    /*here*/
+
+    .floating-sidenav {
+        display: none;
+    }
+
+    #wrapper {
+        display: none;
+    }
+
+    /*.heading b {*/
+    /*font-size: 50px !important;*/
+    /*}*/
+
+    .apollo-solution {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .apollo-solution .heading {
+        padding: 0;
+        text-align: center;
+    }
+
+    .apollo-solution .heading b {
+        font-size: 50px;
+    }
+
+    .apollo-solution .heading h4 {
+        text-align: center;
+    }
+
+    .product {
+        margin-top: 30px;
+    }
+
+    .product b, h4 {
+        padding: 0 !important;
+    }
+
+    .logistics {
+        /*text-align: left !important;*/
+    }
+
+    .sample-text-2 .title-30 {
+        color: #fff !important;
+        font-size: 30px !important;
+    }
+
+    .sample-text-3 {
+        margin-top: 50px;
+    }
+
+    #myCarousel .item {
+        height: 600px;%;
+        padding-top: 50px;
+    }
+
+    .sidenav {
+        /*height: 650px;*/
+    }
+
+    .side-menu {
+        display: none;
+    }
+
+    .display-none {
+        display: none !important;
+    }
+
+    .background-transparent {
+        background: transparent !important;
+    }
+
+    .toggle-sidenav {
+        width: 100%;
+    }
+
+    .line {
+        margin-left: -10px;
+    }
+
+    .logistics .product {
+        padding-top: 20px;
+        /*padding-bottom: 20px !important;*/
+        height: auto !important;
+        padding-bottom: 70px !important;
+    }
+
+    .sample-text-3 .st3-div {
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+
+    .sample-text-3 {
+        display: block !important;
+    }
+
+    .apollo-footer {
+        text-align: center !important;
+        height: 400px;
+        padding-left: 0 !important;
+    }
+
+    .apollo-footer .footer-nav {
+        margin-top: 20px;
+    }
+
+    #apollo-automation-png {
+        width: 100% !important;
+    }
+    .bottom-section {
+        padding-bottom: 360px;
+    }
+
+    .pricing-text .heading-h4 {
+        margin-top: 30px;
+    }
+
+    .pricing-contact {
+        margin-top: 50px;
+    }
+
+    .logistics {
+        display: block !important;
+    }
+
+    .circle {
+        /*background-color: rgba(16, 154, 159, 0.54);
+        border-radius: 500px;
+        width: 450px;
+        height: 450px;*/
+    }
+
+    .circle .title-30 {
+        margin-top: 5% !important;
+    }
+
+    .circle-inner {
+        background-color: rgba(16, 154, 159, 0.54);
+        border-radius: 500px;
+        width: 325px;
+        height: 325px;
+    }
+
+    .apollo-automation-systems.circle {
+        width: 300px !important;
+        height: 600px !important;
+    }
+
+    .apollo-automation-systems .title-30 {
+        margin-top: 10% !important;
+    }
+
+    .apollo-automation-systems .circle-inner {
+        width: 300px !important;
+        height: 600px !important;
+    }
+
+    .apollo-built .col-md-4 {
+        height: auto !important;
+        padding: 20px;
+    }
+
+    .about-accur8 .product p {
+        width: 300px;
+        margin-top: 0 !important;
+    }
+
+    .apollo-automation-systems {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        float: none !important;
+        margin-top: 30px;
+    }
+
+    .apollo-tablet-bg {
+        width: 100%;
+        background-image: none;
+        background-color: #109a9f;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+    }
+
+    .btTop {
+        right: 21px !important;
+        bottom: 20px !important;
+        padding: 8px 12px;
+
+    }
+
+    .built-apollo {
+        margin: 50px 0 -70px 0;
+        width: 100%;
+    }
+    
+    /*.open {
+        display: visible !important;
+    }*/
+
+} /* 768 */
+
+/*IPAD*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .open {
+        display: visible !important;
+    }
+
+    .sample-text {
+        height: 100vh !important;
+        padding: 100px !important;
+        background-position: bottom !important;
+    }
+
+    .redefine h1 {
+        font-size: 50px;
+        padding: 25px;
+        line-height: 60px;
+    }
+
+    .sample-text-sub h4 {
+        font-size: 22px;
+        line-height: 35px;
+        padding: 20px 30px 35px 30px !important;
+    }
+
+    .our-solutions {
+        height: 100vh !important;
+        padding: 50px !important;
+    }
+
+    .our-solutions .product {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .our-solutions .business-automation {
+        margin-top: 50px;
+    }
+
+    .apollo-button {
+        width: auto !important;
+        padding: 0 20px;
+    }
+
+    .something-here-text {
+        margin: 50px 0;
+    }
+
+    .something-here-text h4 {
+        padding: 0 50px !important;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .benefits-text {
+        font-size: 50px !important;
+        padding: 0 25%;
+    }
+
+    .apollo-div-description {
+        padding: 50px;
+        height: 50% !important;
+    }
+
+    .apollo-div-title {
+        font-size: 35px !important;
+    }
+
+    .apollo-div-text {
+        font-size: 15px !important;
+        line-height: 25px;
+    }
+
+    .solution-text {
+        padding: 50px !important;
+    }
+
+    .solution-text ul {
+        padding-top: 25px !important;
+        padding-left: 16% !important;
+    }
+
+    .padding-resp {
+        padding-bottom: 0 !important;
+    }
+}

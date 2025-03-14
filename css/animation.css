@@ -1,0 +1,129 @@
+.circle {
+}
+
+.icon, .logo {
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 1;
+}
+
+.animation-stroke {
+    /*-webkit-transition:all 2s ease-in-out 0s;
+    -moz-transition:all 2s ease-in-out 0s;
+    -o-transition:all 2s ease-in-out 0s;
+    transition:all 2s ease-in-out 0s;*/
+
+    -webkit-animation: svg-stroke 2s linear 0s;
+    -moz-animation: svg-stroke 2s linear 0s;
+    -o-animation: svg-stroke 2s linear 0s;
+    animation: svg-stroke 2s linear 0s;
+}
+
+.animation-scale {
+    -webkit-transition:all .5 ease-in-out 0s;
+    -moz-transition:all .5 ease-in-out 0s;
+    -o-transition:all .5 ease-in-out 0s;
+    transition:all .5 ease-in-out 0s;
+
+    -webkit-animation:circle-animation 1s forwards;
+    -moz-animation:circle-animation 1s forwards;
+    -o-animation:circle-animation 1s forwards;
+    animation:circle-animation 1s forwards;
+
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -o-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes circle-animation {
+    0%{transform:scale(0)}
+    40%{transform:scale(0)}
+    50%{transform:scale(1)}
+    100%{transform:scale(1)}
+}
+
+@-moz-keyframes circle-animation {
+    0%{transform:scale(0)}
+    40%{transform:scale(0)}
+    50%{transform:scale(1)}
+    100%{transform:scale(1)}
+}
+
+@-o-keyframes circle-animation {
+    0%{transform:scale(0)}
+    40%{transform:scale(0)}
+    50%{transform:scale(1)}
+    100%{transform:scale(1)}
+}
+
+@keyframes circle-animation {
+    0%{transform:scale(0)}
+    40%{transform:scale(0)}
+    50%{transform:scale(1)}
+    100%{transform:scale(1)}
+}
+
+@-webkit-keyframes svg-stroke {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: -900;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 900;
+    }
+}
+
+@-moz-keyframes svg-stroke {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: -900;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 900;
+    }
+}
+
+@-o-keyframes svg-stroke {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: -900;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 900;
+    }
+}
+
+@keyframes svg-stroke {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: -900;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 900;
+    }
+}
+
