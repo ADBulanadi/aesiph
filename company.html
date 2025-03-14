@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Company | AESi</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="images/logo.png">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/proxima-nova.css">
+    <link rel="stylesheet" href="Gotham/Gotham.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/floating-menu.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<style>
+    nav {
+        background-color: #fff;
+    }
+
+    nav li a {
+        color: #fff;
+    }
+
+    nav li a:hover {
+        background: transparent !important;
+        color: #fff;
+        box-shadow: none;
+    }
+
+    nav li a:focus {
+        background: transparent !important;
+        color: #fff;
+    }
+
+    .navbar-header a {
+        color: #555;
+    }
+
+    .navbar-header a:hover {
+        color: #555;
+    }
+
+    .company-header {
+        background-image: url("images/user-exp-1.jpg");
+        height: 650px;
+        background-size: cover;
+        /*background-attachment: fixed;*/
+        position: relative;
+    }
+
+    .skew-bg {
+        -ms-transform: skewX(-85deg); /* IE 9 */
+        -webkit-transform: skewX(-85deg); /* Safari */
+        transform: skewX(-85deg);
+        height: 245px;
+    }
+
+    .company-header:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(-45deg, #23A6D5, #23D5AB);
+        opacity: .8;
+    }
+
+    .our-values .value {
+        background-color: #109a9f;
+        color: #fff;
+        padding: 10px 10px 10px 10px;
+        height: 60px;
+    }
+
+    .our-mission .mission {
+        background-color: #f1f1f1;
+        color: #555;
+        padding: 10px 10px 10px 10px;
+        height: 60px;
+    }
+
+    @media (max-width: 768px) {
+        .our-company-heading .heading b {
+            font-size: 50px;
+        }
+
+        .heading-border {
+            font-size: 32px !important;
+        }
+
+        .values {
+            text-align: justify !important;
+        }
+
+        .values b {
+            margin-bottom: 30px;
+        }
+
+        .our-mission .mission {
+            height: auto;
+        }
+
+        .accur8-text {
+            padding: 20px !important;
+        }
+    }
+
+    @media (min-width: 1200px) and (max-height: 1080px) {
+        .company-header {
+            height: 870px;
+        }
+    }
+
+    .product {
+        background-image: url("images/it-bg-green.png");
+    }
+
+    .accur8-logo {
+        width: 100%;
+    }
+
+    @media (min-width: 501px) and (max-width: 991px) {
+        .accur8-logo {
+            width: 250px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .accur8-logo {
+            width: 150px;
+        }
+    }
+
+    .card-deck {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .card {
+        margin: auto;
+        -webkit-transition: all 350ms ease;
+        transition: all 350ms ease;
+        width: 300px;
+    }
+
+    @media (min-width: 576px) {
+        .card-deck {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            margin-right: -15px;
+            margin-left: -15px
+        }
+    }
+
+    @media (max-width: 767px) {
+        .card {
+            width: 250px;
+        }
+
+        .product.cut-rad {
+            border-radius: 0 !important;
+        }
+    }
+
+    .core-mgmt-icon {
+        width: 80%
+    }
+
+    @media (max-width: 991px) {
+        .core-mgmt-icon {
+            width: 150px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .pull-gt-sm {
+            float: none !important;
+        }
+
+        .m4per-sm {
+            margin-left: 4%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .apollo-footer .bottom-footer {
+            margin-top: 10px;
+            width:60%;
+        }
+
+        .apollo-footer .bottom-footer p {
+            white-space: nowrap;
+        }
+
+        .apollo-footer .bottom-footer p img {
+            width:15px;
+        }
+
+        .footer-resp {
+            padding-bottom: 450px !important;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .apollo-footer .bottom-footer p.pull-right {
+            padding-right: 0 !important;
+        }
+    }
+</style>
+
+<body>
+
+<div class="btTop" title="Back to Top">
+    <i class="fa fa-arrow-up"></i>
+</div>
+
+<div class="open">
+    <span class="cls"></span>
+    <span>
+		<ul class="sub-menu ">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="aesi.html">Why AESi</a>
+			</li>
+			<li>
+				<a href="our-solutions.html">Our Solutions</a>
+			</li>
+			<li>
+				<a style="font-weight: 600;" href="company.html">About Us</a>
+			</li>
+            <!--<li>
+                <a href="pricing.html">Pricing</a>
+            </li>-->
+			<li>
+				<a href="contact.html">Contact Us</a>
+			</li>
+            <li><a href="careers.html">Careers</a></li>
+		</ul>
+	</span>
+    <span class="cls"></span>
+</div>
+
+<!--<header class="header">
+    <div class="burger">
+        <div class="burger__patty"></div>
+        <div class="burger__patty"></div>
+        <div class="burger__patty"></div>
+    </div>
+
+    <div class="menu">
+        <div class="menu__brand">
+            <img src="images/logo.png" class="logo" alt="logo">
+        </div>
+        <ul class="menu__list">
+            <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+            <li class="menu__item"><a href="aesi.html" class="menu__link">Why Apollo</a></li>
+            <li class="menu__item"><a href="index.html" class="menu__link">Solutions</a></li>
+            <li class="menu__item"><a href="company.html" class="menu__link">About Us</a></li>
+            <li class="menu__item"><a href="pricing.html" class="menu__link">Pricing</a></li>
+            <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+        </ul>
+    </div>
+</header>-->
+
+<!--<div class="sidenav text-center">
+    &lt;!&ndash;<a href="javascript:void(0)" id="closeBtn">&times;</a>&ndash;&gt;
+    <a href="index.html">Home</a>
+    <a href="aesi.html">Apollo</a>
+    <a href="index.html">Products</a>
+    <a href="commitment.html">Commitment</a>
+    <a href="company.html">Our Company</a>
+    <a href="index.html">Contact</a>
+</div>-->
+
+<div class="row" style="padding-bottom: 350px; position: relative;">
+    <!--<div class="openNav col-md-12 col-xs-12 padding-0">
+        <div class="col-xs-10 text-left">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" id="">  APOLLO</a>
+            </div>
+        </div>
+
+        <div class="col-xs-2">
+            &lt;!&ndash;<span id="openNav">&#9776;</span>&ndash;&gt;
+            <div id="wrapper">
+                <div class="main-item menu">
+                    <span class="line line01"></span>
+                    <span class="line line02"></span>
+                    <span class="line line03"></span>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <nav class="navbar">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" style="white-space:nowrap"><img src="images/logo.png" alt="logo" id="logo">
+                        AESi</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aesi.html">Why AESi</a></li>
+                        <li><a href="our-solutions.html">Our Solutions</a></li>
+                        <li><a href="company.html" class="active-nav">About Us</a></li>
+                        <!--<li><a href="pricing.html">Pricing</a></li>-->
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+    </nav>
+
+    <div class="company-header h100vh" style="display: flex; align-items: center;">
+        <div class="our-company-heading col-md-12 col-sm-12" style="text-align: center;" data-aos="fade-up"
+             data-aos-duration="1000">
+            <div class="heading">
+                <p style="font-size: 40px; color: #fff;">We build solutions that create<br>value to our customers
+                </p> <br>
+                <!--<h4 class="color-white col-md-8 col-md-offset-2 text-center">
+                    Our core management and technical teams have in-depth knowledge of the port and logistics
+                    industries. We know how things work in a port, being one of the port operators in Subic Bay and
+                    backed by years of
+                    experience in trade facilitation.<br><br>
+                    We offer custom-made solutions which will fit into your business process.
+                </h4>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="content col-md-12 padding-right-0 padding-left-0">
+        <!--<div class="col-md-10 col-md-offset-1 inner-content margin-top-50">
+            <div class="heading col-md-12 apollo-border-top row padding-0" id="apollo">
+                <div class="col-md-8 margin-top-50" data-aos="fade-up" data-aos-duration="1000">
+                    <b class="title-40 margin-top-50">Accur8 Enterprise Solutions Inc.</b>
+                    <p class="custom-p margin-top-20">AESi is a cloud based automation solutions provider for the logistics industry that offers leading-edge systems for port management, warehouse or inventory management, transportation management and queueing operations for truck and equipment. It was founded in 2015 with just seven people with eager minds, full of passion and grit. Its founders capitalize on the principle that "First and foremost, we must build solutions that create value to our customers."<br><br>
+                        At AESi, this is and will always be who we are.</p>
+                </div>
+
+                <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="images/Accur8_Logo 3.png" alt="accur8-logo-3" style="width: 100%;">
+                </div>
+            </div>
+
+            <div class="row col-md-12">
+                <div class="col-md-4 margin-top-50 text-right values" data-aos="fade-left" data-aos-duration="1000">
+                    <b class="title-40">Our Values</b>
+                    <p>Value Creation</p>
+                    <p>Accuracy</p>
+                    <p>Innovation</p>
+                    <p>Customer Results</p>
+                    <p>Integrity</p>
+                    <p class="margin-top-30">People</p>
+                </div>
+
+                <div class="col-md-8 margin-top-50 values" data-aos="fade-right" data-aos-duration="1000">
+                    <b class="title-40">Our Mission</b>
+                    <p>Our team aims to create exceptional value by:</p>
+                    <p><b class="font-14">Delivering</b> accurate information and solutions to our stakeholders and customers,</p>
+                    <p><b class="font-14">Emerging</b> forward thinking and leading-edge technologies,</p>
+                    <p><b class="font-14">Connecting</b> with customers by providing excellent customer service and experience,</p>
+                    <p><b class="font-14">Conducting</b> business in accordance with the highest standard of professionalism behavior and ethics, and</p>
+                    <p><b class="font-14">Fostering</b> a culture of continuous improvement and to be the best place we work where people are inspired to be their best</p>
+                </div>
+            </div>
+        </div>-->
+
+        <div class="col-md-12" style="padding: 5% 0; background-color:#fff;">
+            <div class="heading col-md-12 text-center"
+                 style="display: flex; align-items: center; padding-bottom:0">
+                <div class="col-md-2 col-md-offset-5 padding-top-30"
+                     data-aos="fade-up" data-aos-duration="1000" style="margin:auto;">
+                    <img src="images/svg/idea.svg" alt="Why AESi" class="core-mgmt-icon"><br>
+                </div>
+            </div>
+            <div class="heading col-md-12 text-center"
+                 style="display: flex; align-items: center; padding-top: 20px;">
+                <div class=" col-md-8 col-md-offset-2 padding-bottom-30"
+                     data-aos="fade-down" data-aos-duration="1000" style="color: #333;">
+                    <h4 class="heading-h4 os-description"><em>
+                        Our core management and technical teams have in-depth knowledge of the port and logistics
+                        industries. We know how things work in a port, being one of the port operators in Subic Bay.<br><br>
+                        We offer custom-made solutions which will fit into your business process.</em>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 aesi-container" style="position: relative;">
+
+            <div class="col-md-12 col-xs-12 text-center aesi-logo" style="">
+                <div class="text-center"
+                     data-aos="zoom-in" data-aos-duration="1000" style="margin:auto;">
+                    <img src="images/Accur8_Logo_3.png" alt="accur8-logo"
+                         class="accur8-logo" style="max-width:400px; margin:auto;"><br>
+                </div>
+            </div>
+
+            <div class="skew-bg col-md-12 col-xs-12" style="background-color: #f3f3f3;"></div>
+
+            <div class="clearfix aesi col-md-12 col-xs-12" style="">
+                <div style="" class="title-50 heading-border col-md-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+                    Accur8 Enterprise Solutions Inc.
+                </div>
+
+                <div class="col-md-8 col-md-offset-2 col-xs-12" data-aos="fade-up" data-aos-duration="2000" style="margin-top: 20px;">
+                    <p style="color: #555; font-size: 18px; margin-top: 20px; text-align: center;">
+                        is a
+                        cloud based automation solutions provider for the logistics industry that
+                        offers leading-edge end-to-end automation systems for industrial terminals, Cargo & Logistics
+                        companies, Manufacturing companies and small to medium-sized enterprises (SME). It was founded
+                        in 2015 with just seven people with eager minds, full of passion and grit. Its founders
+                        capitalize
+                        on the principle that
+                        <br><br>
+                        "First and foremost, we must build solutions that create value to our
+                        customers."
+                        <br><br>
+                        At AESi, this is and will always be who we are.</p>
+                </div>
+            </div>
+
+            <div class="skew-bg col-md-12 col-xs-12" style="background-color: #f3f3f3;"></div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1 margin-top-100 col-xs-12 above-our-mission">
+            <div class="col-md-4" style="text-align: right;">
+                <img src="images/apollo-logo-blue.png" alt="logo-blue" style="width: 100px" data-aos="fade-up"
+                     data-aos-duration="1000">
+                <p class="padding-top-10" data-aos="fade-up" data-aos-duration="1500">Founded in 2015</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="images/7-people.png" alt="logo-blue" style="width: 100px" data-aos="fade-up"
+                     data-aos-duration="1000">
+                <p class="padding-top-10" data-aos="fade-up" data-aos-duration="1500">13 People</p>
+            </div>
+            <div class="col-md-4" style="text-align: left;">
+                <img src="images/eager-minds.png" alt="logo-blue" style="width: 100px" data-aos="fade-up"
+                     data-aos-duration="1000">
+                <p class="padding-top-10" data-aos="fade-up" data-aos-duration="1500">Eager Minds</p>
+            </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1 margin-top-100 col-xs-12">
+            <div class="col-md-12 text-center margin-bottom-20" data-aos="fade-up" data-aos-duration="1000">
+                <!--<div class="col-md-4 text-right">
+                    <h2 class=""><span style="color: #555"><b>OUR </b></span><span style="color: #109a9f"><b>VALUES</b></span></h2>
+                </div>
+                <div class="col-md-8">
+                    <h2 class=""><span style="color: #555"><b>OUR </b></span><span style="color: #109a9f"><b>MISSION</b></span></h2>
+                </div>-->
+
+                <div class="title-40 heading-border">Our Mission</div>
+            </div>
+
+            <div class="col-md-4 text-right our-values" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-md-offset-8 col-md-4 text-right value margin-top-20 material-box-shadow">
+                    <b>Value Creation</b>
+                </div>
+            </div>
+
+            <div class="col-md-7 our-mission" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-md-10 mission margin-top-20 material-box-shadow">
+                    <p>Our team aims to create exceptional value by:</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-right our-values" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-md-offset-8 col-md-4 text-right value margin-top-20 material-box-shadow">
+                    <b>Accuracy</b>
+                </div>
+            </div>
+
+            <div class="col-md-7 our-mission" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-md-10 mission margin-top-20 material-box-shadow">
+                    <p><span style="color: #109a9f; font-weight: bold;">Delivering </span>accurate information and
+                        solutions to our stakeholders and customers,</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-right our-values" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-md-offset-8 col-md-4 text-right value margin-top-20 material-box-shadow">
+                    <b>Innovation</b>
+                </div>
+            </div>
+
+            <div class="col-md-7 our-mission" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-md-10 mission margin-top-20 material-box-shadow">
+                    <p><span style="color: #109a9f; font-weight: bold;">Emerging </span>forward thinking and
+                        leading-edge technologies,</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-right our-values" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-md-offset-8 col-md-4 text-right value margin-top-20 material-box-shadow">
+                    <b>Customer Results</b>
+                </div>
+            </div>
+
+            <div class="col-md-7 our-mission" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-md-10 mission margin-top-20 material-box-shadow">
+                    <p><span style="color: #109a9f; font-weight: bold;">Connecting </span>with customers by providing
+                        excellent customer service and experience,</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-right our-values" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-md-offset-8 col-md-4 text-right value margin-top-20 material-box-shadow">
+                    <b>Integrity</b>
+                </div>
+            </div>
+
+            <div class="col-md-7 our-mission" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-md-10 mission margin-top-20 material-box-shadow">
+                    <p><span style="color: #109a9f; font-weight: bold;">Conducting </span>business in accordance with
+                        the highest standard of professionalism behavior and ethics, and</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-right our-values" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-md-offset-8 col-md-4 text-right value margin-top-20 material-box-shadow">
+                    <b>People</b>
+                </div>
+            </div>
+
+            <div class="col-md-7 our-mission" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-md-10 mission margin-top-20 material-box-shadow">
+                    <p><span style="color: #109a9f; font-weight: bold;">Fostering </span>a culture of continuous
+                        improvement and to be the best place we work where people are inspired to be their best</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1 clearfix col-xs-12 team-accur8" style="margin-bottom: 50px;">
+            <div class="margin-top-100">
+                <div class="text-center margin-bottom-20" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="title-40 heading-border">The Team Behind AESi</div>
+                </div>
+
+                <div class="margin-top-50 card-deck">
+
+                    <div class="col-md-2"></div>
+
+                    <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay="50"
+                         data-aos-duration="1000">
+                        <div class="text-center" style="margin-bottom: 10px;">
+                            <img src="images/carlo-alino.png" alt="person-icon" width="160">
+                        </div>
+                        <div class="text-center">
+                            <label style="color: #109a9f">Carlo Aliño</label>
+                            <p style="color: #888; margin-top: -5px;">Chairman</p>
+                        </div>
+                    </div>
+
+                    <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay="50"
+                         data-aos-duration="1000">
+                        <div class="text-center" style="margin-bottom: 10px;">
+                            <img src="images/lester-valdes.png" alt="person-icon" width="160">
+                        </div>
+                        <div class="text-center">
+                            <label style="color: #109a9f">Lester Valdes</label>
+                            <p style="color: #888; margin-top: -5px;">Director</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2"></div>
+
+                </div>
+
+                <div class="col-md-10 col-md-offset-1" data-aos="fade-up" data-aos-duration="1000">
+
+                    <div class="margin-top-50 card-deck">
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay="100"
+                             data-aos-duration="1000">
+                            <div class="text-center">
+                                <img src="images/chi-sideview-circle-3.png" alt="chi-sideview-circle-2" width="208">
+                            </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Emmanuel Alarilla Jr.</label>
+                                <p style="color: #888; margin-top: -5px;">President & Co-founder</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay="100"
+                             data-aos-duration="1000">
+                            <div class="text-center" style="margin-top: 8px;">
+                                <img src="images/mon-sideview-circle-2.png" alt="mon-sideview-circle-2" width="190">
+                            </div>
+                            <div class="text-center" style="margin-top: 2px;">
+                                <label style="color: #109a9f">Raymond Paolo Menguita</label>
+                                <p style="color: #888; margin-top: -5px;">General Manager & Co-founder</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay="100"
+                             data-aos-duration="1000">
+                            <div class="text-center">
+                                <img src="images/doms-sideview-circle-2.png" alt="doms-sideview-circle-2" width="205">
+                            </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Dominic Canillo</label>
+                                <p style="color: #888; margin-top: -5px;">Head of Development</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay="150"
+                             data-aos-duration="1000">
+                            <div class="text-center">
+                                <img src="images/anton-sideview-circle-2.png" alt="anton-sideview-circle-2" width="190">
+                            </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Jose Antonio Alvarez</label>
+                                <p style="color: #888; margin-top: -5px;">Team Leader</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay="150"
+                             data-aos-duration="1000">
+                            <div class="text-center">
+                                <img src="images/aubrey-sideview-circle-2.png" alt="aubrey-sideview-circle-2"
+                                     width="195">
+                            </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Aubrey Rose Bostrillo</label>
+                                <p style="color: #888; margin-top: -5px;">Client Services Manager</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay=650"
+                             data-aos-duration="1000">
+                            <div class="text-center">
+                                <img src="images/wandrea-sideview-circle-2.png" alt="wandrea-sideview-circle-2"
+                                     width="200">
+                            </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Wandrea Mae Moscoso</label>
+                                <p style="color: #888; margin-top: -5px;">Junior Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay=650"
+                             data-aos-duration="1000">
+                            <div class="text-center" style="margin-bottom: 8px;">
+                                <img src="images/Marco-img.png" alt="person-icon" width="180">
+                            </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Marco Robby Jimenez</label>
+                                <p style="color: #888; margin-top: -5px;">Web Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay=650"
+                             data-aos-duration="1000">
+                            <div class="text-center" style="margin-bottom: 10px;">
+                                <img src="images/Sam-Cruz.png" alt="person-icon" width="170">
+                            </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Samuelito Cruz</label>
+                                <p style="color: #888; margin-top: -5px;">Senior Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay=650"
+                             data-aos-duration="1000">
+                             <div class="text-center" style="margin-bottom: 10px; margin-top: 10px;">
+                                <img src="images/Ervin-Sebastian.png" alt="person-icon" width="170">
+                            </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Ervin Sebastian</label>
+                                <p style="color: #888; margin-top: -5px;">Web Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay=650"
+                             data-aos-duration="1000">
+                            <div class="text-center" style="margin-bottom: 10px;">
+                                <img src="images/Sam-Perez.png" alt="person-icon" width="170">
+                            </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Samirquil Perez</label>
+                                <p style="color: #888; margin-top: -5px;">Business Analyst / Project Manager</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay=650"
+                             data-aos-duration="1000">
+                             <div class="text-center" style="margin-bottom: 10px;">
+                                <img src="images/Allan-Nachor.png" alt="person-icon" width="170">
+                            </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Allan Nachor</label>
+                                <p style="color: #888; margin-top: -5px;">Web Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay=650"
+                                data-aos-duration="1000">
+                                <div class="text-center" style="margin-bottom: 10px;">
+                                    <img src="images/Paul-Lanot.png" alt="person-icon" width="170">
+                                </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Paul Leandro Lanot</label>
+                                <p style="color: #888; margin-top: -5px;">Web Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay="750"
+                             data-aos-duration="1000">
+                             <div class="text-center" style="margin-bottom: 10px;">
+                                <img src="images/Pia-Lumio.png" alt="person-icon" width="170">
+                            </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Pia-Ann Lumio</label>
+                                <p style="color: #888; margin-top: -5px;">Finance and Accounting Specialist</p>
+                            </div>
+                        </div>
+
+                         <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay="750"
+                             data-aos-duration="1000">
+                            <div class="text-center" style="margin-top: -6px;">
+                                <img src="images/lorenz-sideview-circle-2.png" alt="lorenz-sideview-circle-2"
+                                     width="200">
+                            </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Manuel Lorenzo Pereira</label>
+                                <p style="color: #888; margin-top: -5px;">Team Leader</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-4 text-center" data-aos="fade-up" data-aos-delay="750"
+                             data-aos-duration="1000">
+                             <div class="text-center" style="margin-bottom: 10px; margin-top: 10px;">
+                                <img src="images/Ian-img.png" alt="person-icon" width="200">
+                            </div>
+                            <div class="text-center">
+                                <label style="color: #109a9f">Ian Dela Cruz</label>
+                                <p style="color: #888; margin-top: -5px;">Software Architect / Information Officer</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="apollo-footer row col-md-12 clearfix">
+        <div class="col-md-12 top-footer">
+            <div class="col-md-6 col-xs-12 footer-logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo" style="width: 50px;"> AESi</a>
+            </div>
+            <div class="col-md-6 col-xs-12 footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aesi.html">Why AESi</a></li>
+                    <li><a href="our-solutions.html">Our Solutions</a></li>
+                    <li><a href="company.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="news-and-updates.html">News and Updates</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div><br>
+
+        <div class="text-center m4per-sm">
+            <div class="row bottom-footer"
+                 style="width:94%;position:absolute;bottom:0px;margin:auto;">
+                <div class="col-xs-12">
+                    <p class="text-center pull-left pull-gt-sm">
+                        © 2018 Accur8 Enterprise Solutions Inc.</p>
+                    <p class="text-center pull-right pull-gt-sm" style="font-size: 11px; color: rgba(255, 255, 255, 0.8);">a member of &nbsp;
+                        <img src="images/SSG Logo-02.png" width="20" style="padding-bottom:3px;">
+                        S.T.A.R. Services Group</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h3>Solutions</h3>
+                    <div class="">
+                        <h4 class="margin-top-30">Logistics Automation</h4>
+                        <a href="warehousing.html">Warehousing</a>
+                        <a href="terminal.html">Terminal</a>
+                    </div>
+                    <div class="">
+                        <h4 class="margin-top-20">Enterprise Resource Planning</h4>
+                        <a href="warehousing.html">Something Here</a>
+                        <a href="warehousing.html">Something Here</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/floating-menu.js"></script>
+    <script src="js/apollo.js"></script>
+</body>
+</html>

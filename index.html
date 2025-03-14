@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home | AESi</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">-->
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/proxima-nova.css" />
+    <link rel="stylesheet" href="Gotham/Gotham.css" />
+
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/floating-menu.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <!--<link rel="stylesheet" href="css/system-vector.css">-->
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/changing-words.css" />
+  </head>
+
+  <style>
+    /*svg {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+    }*/
+
+    nav li a {
+      color: #fff;
+    }
+
+    nav li a:hover {
+      background: transparent !important;
+      color: #fff;
+      box-shadow: none;
+    }
+
+    nav li a:focus {
+      background: transparent !important;
+      color: #fff;
+    }
+
+    nav li a .active {
+      color: #109a9f;
+    }
+
+    .navbar-header a:hover {
+      color: #fff;
+    }
+
+    .carousel.vertical .item {
+      -webkit-transition: 0.6s ease-in-out top;
+      -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+      -o-transition: 0.6s ease-in-out top;
+      transition: 0.6s ease-in-out top;
+    }
+
+    .carousel.vertical .active {
+      top: 0;
+    }
+
+    .carousel.vertical .next {
+      top: 400px;
+    }
+
+    .carousel.vertical .item {
+      left: 0;
+      font-size: 40px;
+      color: #fff;
+      font-weight: bold;
+      padding-left: 0 !important;
+    }
+
+    .sample-text-3 {
+      display: flex; /* establish flex container */
+      flex-direction: row; /* default value; can be omitted */
+      flex-wrap: nowrap; /* default value; can be omitted */
+      justify-content: space-between; /* switched from default (flex-start, see below) */
+    }
+
+    @media (max-width: 768px) {
+      .apollo-solution-bg {
+        padding: 0 !important;
+        height: 300px !important;
+      }
+
+      .apollo-solution {
+        background-image: none !important;
+      }
+
+      .apollo-solution b {
+        color: #109a9f !important;
+        padding-bottom: 0 !important;
+      }
+
+      .apollo-solution h4 {
+        margin-top: 0 !important;
+      }
+
+      .something-here b {
+        font-size: 45px;
+      }
+    }
+
+    @media (min-width: 770px) {
+      .line {
+        margin-left: -10px;
+      }
+    }
+
+    .sample-text {
+      padding: 50px;
+      /*background: linear-gradient(to bottom right, #109A9F, #18DAA5);*/
+      background-image: url("images/index-header-blur-min.jpg");
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      /*background-attachment: scroll;*/
+
+      width: 100%;
+      left: 0;
+      right: 0;
+      height: 100vh;
+    }
+
+    .benefits {
+      padding: 50px;
+      /*background: linear-gradient(to bottom right, #109A9F, #18DAA5);*/
+      background-image: url("images/office-2.jpg");
+      /*background-image: url("images/our-solutions.jpg");*/
+      background-size: cover;
+      /*background-attachment: fixed;*/
+      width: 100%;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      position: relative;
+    }
+
+    .benefits:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+      opacity: 0.8;
+    }
+
+    .our-solutions {
+      padding: 50px;
+      background-image: url("images/our-solutions-3.1-min.png");
+      background-size: cover;
+      width: 100%;
+      left: 0;
+      right: 0;
+      height: 100vh;
+    }
+
+    .apollo-solution {
+      /*background-image: url("images/apollo-ribbon.png");
+        background-size: 100%;
+        background-repeat: no-repeat;*/
+    }
+
+    /*@media (min-width: 1200px) and (max-height: 1080px) {
+        .sample-text {
+            height: 870px;
+        }
+
+        .apollo-solution {
+            padding-top: 75px;
+            margin-bottom: 30px;
+        }
+
+        .apollo-solution .heading-h4 {
+            margin-top: 5%;
+        }
+
+        #products-vector {
+            margin-top: 5%;
+        }
+
+        .something-here-text {
+            margin-top: 10%;
+        }
+    }*/
+
+    text {
+      font-family: "Gotham";
+      font-weight: normal;
+    }
+
+    .client {
+      width: 80%;
+      margin: auto;
+      filter: grayscale(100%);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .client:hover {
+      transform: scale(1.1);
+      filter: grayscale(0%);
+    }
+
+    @keyframes float {
+      0% {
+        transform: translatey(10px);
+      }
+      50% {
+        transform: translatey(-10px);
+      }
+      100% {
+        transform: translatey(10px);
+      }
+    }
+
+    .contfloat {
+      transform: translatey(10px);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @media (max-width: 768px) {
+      .pull-gt-sm {
+        float: none !important;
+      }
+
+      .m4per-sm {
+        margin-left: 4%;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .apollo-footer .bottom-footer {
+        margin-top: 10px;
+        width: 60%;
+      }
+
+      .apollo-footer .bottom-footer p {
+        white-space: nowrap;
+      }
+
+      .apollo-footer .bottom-footer p img {
+        width: 15px;
+      }
+
+      .footer-resp {
+        padding-bottom: 450px !important;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .apollo-footer .bottom-footer p.pull-right {
+        padding-right: 0 !important;
+      }
+    }
+  </style>
+
+  <body>
+    <!--<header class="header">
+	<div class="burger">
+		<div class="burger__patty"></div>
+		<div class="burger__patty"></div>
+		<div class="burger__patty"></div>
+	</div>
+
+	<div class="menu">
+		&lt;!&ndash;<div class="menu__brand">
+			<img src="images/logo.png" class="logo" alt="logo">
+		</div>&ndash;&gt;
+		<ul class="menu__list">
+			<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+			<li class="menu__item"><a href="aesi.html" class="menu__link">Why Apollo</a></li>
+			<li class="menu__item"><a href="index.html" class="menu__link">Solutions</a></li>
+			<li class="menu__item"><a href="company.html" class="menu__link">About Us</a></li>
+			<li class="menu__item"><a href="pricing.html" class="menu__link">Pricing</a></li>
+			<li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+		</ul>
+	</div>
+</header>-->
+
+    <div class="btTop" title="Back to Top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+
+    <div class="open">
+      <span class="cls"></span>
+      <span>
+        <ul class="sub-menu">
+          <li>
+            <a style="font-weight: 600;" href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="aesi.html">Why AESi</a>
+          </li>
+          <li>
+            <a href="our-solutions.html">Our Solutions</a>
+          </li>
+          <li>
+            <a href="company.html">About Us</a>
+          </li>
+          <!--<li>
+                <a href="pricing.html">Pricing</a>
+            </li>-->
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+          <li>
+            <a href="careers.html">Careers</a>
+          </li>
+        </ul>
+      </span>
+      <span class="cls"></span>
+    </div>
+
+    <!--<div class="sidenav text-center">
+	&lt;!&ndash;<a href="javascript:void(0)" id="closeBtn">&times;</a>&ndash;&gt;
+	&lt;!&ndash;<a href="index.html" style="padding-bottom: 20px;"><span style="letter-spacing: 3px; font-weight: bold; font-size: 20px;"> APOLLO</span></a>&ndash;&gt;
+	<a href="index.html">&lt;!&ndash;<span class="fa fa-home"></span>&ndash;&gt; Home</a>
+	<a href="aesi.html">&lt;!&ndash;<span class="fa fa-question-circle"></span>&ndash;&gt; Why Apollo</a>
+	<a href="index.html">&lt;!&ndash;<span class="fa fa-lightbulb-o"></span>&ndash;&gt; Solutions</a>
+	<a href="company.html">&lt;!&ndash;<span class="fa fa-info-circle"></span>&ndash;&gt; About Us</a>
+	<a href="pricing.html">&lt;!&ndash;<span class="fa fa-credit-card-alt"></span>&ndash;&gt; Pricing</a>
+	<a href="index.html">&lt;!&ndash;<span class="fa fa-envelope"></span>&ndash;&gt; Contact</a>
+</div>-->
+
+    <div
+      style="padding-bottom: 350px; position: relative;"
+      class="main-container"
+    >
+      <div class="sample-text text-center col-xs-12">
+        <!--<div class="openNav col-xs-12 padding-0">
+            <div class="col-xs-10 text-left">
+                &lt;!&ndash;<div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" id="">  APOLLO</a>
+                </div>&ndash;&gt;
+            </div>
+
+            <div class="col-xs-2">
+                &lt;!&ndash;<span id="openNav">&#9776;</span>&ndash;&gt;
+                <div id="wrapper">
+                    <div class="main-item menu">
+                        <span class="line line01"></span>
+                        <span class="line line02"></span>
+                        <span class="line line03"></span>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <div class="col-md-12 col-xs-12 redefine">
+          <!--<div class="col-md-8 col-xs-12 text-right header-left" style="padding-right: 0 !important;">
+                <p class="index-header-text" style="font-size: 40px; color: #fff;">Redefine the way you manage your</p>
+            </div>
+
+            <div class="carousel slide vertical col-md-4 col-xs-12 text-left">
+                &lt;!&ndash; Carousel items &ndash;&gt;
+                <div class="carousel-inner">
+                    <div class="active item">
+                        port
+                    </div>
+                    <div class="item">
+                        terminal
+                    </div>
+                    <div class="item">
+                        warehouse
+                    </div>
+                    <div class="item">
+                        inventory
+                    </div>
+                    <div class="item">
+                        cargo
+                    </div>
+
+                    <div class="item">
+                        logistics
+                    </div>
+                    <div class="item">
+                        accounting
+                    </div>
+                    <div class="item">
+                        payroll
+                    </div>
+                    <div class="item">
+                        people
+                    </div>
+
+                    <div class="item">
+                        BUSINESS
+                    </div>
+                </div>
+            </div>-->
+
+          <h1
+            class="col-md-12 changing-text"
+            style="color: #fff; font-weight: normal;"
+          >
+            <span class="">Redefine the way you manage your</span>
+            <span class="" id="changingword" style="font-weight: bold;"
+              >port</span
+            >
+          </h1>
+        </div>
+
+        <!--<img src="images/banner-white.gif" alt="" style="width: 80%; margin-top: 50px;">-->
+        <div class="col-md-12 col-xs-12 sample-text-sub">
+          <h4
+            class="heading-h4 col-xs-12 col-md-8 col-md-offset-2"
+            style="
+              margin-top: 45px;
+              color: #fff;
+              padding: 20px 20px 40px 20px;
+              background-color: rgba(0, 0, 0, 0.5);
+            "
+          >
+            <div style="margin-top: 20px;">
+              <span style="line-height: 25px;">
+                <span class="">AESi Automation Solutions</span> is brought to
+                you by
+                <span class="">Accur8 Enterprise Solutions Inc.</span> that
+                automates and improves the operational efficiency of your
+                <span class=""
+                  >port, terminal, cargo handling, warehouse, inventory
+                  tracking, payroll,</span
+                >
+                and<span class=""> accounting.</span>
+              </span>
+            </div>
+          </h4>
+        </div>
+      </div>
+
+      <div class="container padding-bottom-0">
+        <nav class="navbar">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <a
+                  class="navbar-brand"
+                  href="index.html"
+                  style="white-space: nowrap;"
+                  ><img src="images/logo.png" alt="logo" id="logo" /> AESi</a
+                >
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div
+                class="collapse navbar-collapse"
+                id="bs-example-navbar-collapse-1"
+              >
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html" class="active-nav">Home</a></li>
+                  <li><a href="aesi.html">Why AESi</a></li>
+                  <li><a href="our-solutions.html" id="">Our Solutions</a></li>
+                  <li><a href="company.html">About Us</a></li>
+                  <!--<li><a href="pricing.html">Pricing</a></li>-->
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="careers.html">Careers</a></li>
+                </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+          </div>
+        </nav>
+
+        <!--<div class="col-md-12 heading" style="text-align: center; margin-top: 50px; padding-bottom: 10px;" data-aos="fade-up" data-aos-duration="1000">
+                <b>Apollo Systems</b></div>
+                <div class="heading col-md-12 col-xs-12 text-center" style="padding-top: 0;" data-aos="fade-up" data-aos-duration="1200">
+                    &lt;!&ndash;<b style="color: #fff;">The Apollo Solution</b>&ndash;&gt;
+                    <h4 class="heading-h4 col-md-8 col-md-offset-2">
+                    <div style=" margin-top: 20px;">
+                        <span style="line-height: 25px;">
+                    is a solution brought to you by <span class="fw-bold">Accur8 Enterprise Solutions Inc.</span>
+                to automate and improve your operational efficiency for your  <span class="fw-bold">port, terminal, cargo handling,
+                                    warehouse, inventory tracking, payroll,</span> and<span class="fw-bold"> accounting.</span>
+                                </span>
+            </div></h4>
+        </div>-->
+
+        <div
+          class="col-md-10 col-md-offset-1 text-center apollo-vector col-xs-12"
+          style="height: 100vh; position: relative;"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <img
+            src="images/apollo-vector.svg"
+            alt="apollo-vector"
+            width="100%"
+          />
+
+          <!--<img src="images/svg/products-vector-v2.svg" alt="products-vector" id="products-vector" style="width: 100%;">-->
+          <!--<div class="connect-wrap">
+                <div class="extras">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    &lt;!&ndash;<span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>&ndash;&gt;
+                </div>
+                <div class="links" data-aos="zoom-in" data-aos-duration="2000">
+                    <a target="_blank" href="#"><img src="images/apollo-home.png" alt="apollo-home"></a>
+                    <a target="_blank" href="#"><img src="images/apollo-cargo-ship.png" alt="apollo-cargo-ship"></a>
+                    <a target="_blank" href="#"><img src="images/apollo-warehouse.png" alt="apollo-cargo-ship"></a>
+                    <a target="_blank" href="https://codepen.io/khadkamhn"><i class="fa fa-codepen"></i></a>
+                    <a target="_blank" href="http://codecanyon.net/user/khadkamhn"><i class="fa fa-briefcase"></i></a>
+                    <a target="_blank" href="#"><img src="images/apollo-home.png" alt="apollo-home"></a>
+                    <a target="_blank" href="#"><img src="images/apollo-cargo-ship.png" alt="apollo-cargo-ship"></a>
+                    <a target="_blank" href="http://dribbble.com/khadkamhn"><i class="fa fa-dribbble"></i></a>
+                    <a target="_blank" href="https://codepen.io/khadkamhn"><i class="fa fa-codepen"></i></a>
+                    <a target="_blank" href="http://codecanyon.net/user/khadkamhn"><i class="fa fa-briefcase"></i></a>
+                </div>
+                &lt;!&ndash;<div class="smiley">
+                    <div class="face">
+                        <div class="eyes"></div>
+                    </div>
+                    <div class="legs"></div>
+                </div>&ndash;&gt;
+
+                <div class="div" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="images/apollo-laptop.png" alt="apollo-laptop" style="width: 100%;">
+                </div>
+            </div>-->
+
+          <!--<img class="apollo-laptop" src="images/apollo-laptop.png" alt="apollo-laptop"
+                 style="width: 280px; position: absolute; left: 38%; top: 44%;">
+
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		   viewBox="0 0 1280 800" style="enable-background:new 0 0 1280 800;" xml:space="preserve">
+		<style type="text/css">
+		  .st0 {
+              fill: #30D8D8;
+          }
+
+          .st1 {
+              fill: #109A9F;
+          }
+
+          .st2 {
+              fill: none;
+              stroke: #808080;
+              stroke-miterlimit: 10;
+          }
+
+          .st3 {
+              fill: none;
+              stroke: #FFFFFF;
+              stroke-width: 2;
+              stroke-miterlimit: 10;
+          }
+
+          .st4 {
+              fill: none;
+              stroke: #FFFFFF;
+              stroke-miterlimit: 10;
+          }
+
+          .st5 {
+              fill: none;
+              stroke: #FCFCFC;
+              stroke-miterlimit: 10;
+          }
+
+          @media (max-width: 768px) {
+              .pull-gt-sm {
+                  float: none !important;
+              }
+          }
+
+          @media (max-width: 400px) {
+              .apollo-footer .bottom-footer {
+                  margin-top: 10px;
+                  width:60%;
+              }
+
+              .apollo-footer .bottom-footer p {
+                  white-space: nowrap;
+              }
+
+              .apollo-footer .bottom-footer p img {
+                  width:15px;
+              }
+
+              .footer-resp {
+                  padding-bottom: 450px !important;
+              }
+          }
+
+          @media (max-width: 991px) {
+              .apollo-footer .bottom-footer p.pull-right {
+                  padding-right: 0 !important;
+              }
+          }
+		</style>
+		<g id="vector">
+		  <path class="st2 icon" d="M525.5,199.9h68.2V309"/>
+		  <path class="st2 icon" d="M703,199.9V309"/>
+		  <path class="st2 icon" d="M919.4,276.3v51.8H769.1"/>
+		  <path class="st2 icon" d="M978.1,427.2h-81.5v43.4h-120"/>
+		  <path class="st2 icon" d="M768.7,589.3h-68.2V480.3"/>
+		  <path class="st2 icon" d="M591.2,590.3V481.3"/>
+		  <path class="st2 icon" d="M374.8,515v-51.8h150.3"/>
+		  <path class="st2 icon" d="M316.1,364h81.5v-43.4h120"/>
+		  <circle id="house_1_" class="st0 circle" cx="919.4" cy="211.8" r="64.5"/>
+		  <path id="house" class="st3 icon" d="M926.8,200.1c0,4.1-3.3,7.4-7.4,7.4c-4.1,0-7.4-3.3-7.4-7.4s3.3-7.4,7.4-7.4
+			C923.5,192.7,926.8,196,926.8,200.1z M919.4,178.6L891,199.7v41.2h20.4v-24.3h15.9v24.3h20.4v-41.2L919.4,178.6z M952.9,203.4
+			l2.2-3l-35.8-26.4l-35.7,26.4l2.2,3l33.5-24.8L952.9,203.4z"/>
+		  <circle id="ship_1_" class="st0 circle" cx="444" cy="147.3" r="97" data-aos="zoom-in" data-aos-duration="1000"/>
+		  <path id="ship" class="st3 icon" d="M505.7,176.3l-18,18.4h-89.5l-18-18.4c-5.2-5.4-5.2-14.2,0-19.5h125.4
+			C510.9,162.1,510.9,170.9,505.7,176.3z M423.9,121.7v34.8h-34.8v-34.8H423.9z M415.7,135.2c0-2.9-2.3-5.2-5.2-5.2h-7.9
+			c-2.9,0-5.2,2.3-5.2,5.2v7.9c0,2.9,2.3,5.2,5.2,5.2h7.9c2.9,0,5.2-2.3,5.2-5.2V135.2z M456.5,139.6h-17v17h17V139.6z M475.6,139.6
+			h-17v17h17V139.6z M494.8,139.6h-17v17h17V139.6z M475.6,101.7h-17v17h17V101.7z M466.1,120.6h-17v17h17V120.6z M485.2,120.6h-17
+			v17h17V120.6z M418.4,121.5v-12.3c0-2.2-1.8-4-4-4h-15.8c-2.2,0-4,1.8-4,4v12.3H418.4z M410.1,104.9V92.6h-6.5v12.3H410.1z"/>
+		  <circle id="crane_1_" class="st1 circle" cx="235.2" cy="343.9" r="83.4"/>
+		  <path id="crane" class="st3 icon" d="M207.1,303.5v3.9V327h-18.9v-23.5H207.1z M212.1,394.8l-0.1-72.9h-4.7 M199.6,394.7h5.4h55.8
+			 M230.6,395l-0.6-70.7h51.4l-14.2-18l-37.2-0.3l-5.7-9.4l-6.4,0l-6.1,10.5l-4.4,0.2 M207.5,319.1h4.6v-9.2h-4.6 M243.1,364.6v18.9
+			h34.7v-18.9h-29.5H243.1z M272,364.6l-11.6-9.9l-10.8,9.9 M252.7,324.4v4h16.1v-4 M260.8,340l-2.3,0v4.7h4.7V340H260.8v-11.7
+			 M257.4,351.8c0.6,1.3,2.1,3,3.5,3c1.3,0,2.5-1.1,2.6-3c0.1-1.9-2.3-3.6-2.3-3.6v-1.1v-2.5 M230.1,324.3v-18.2 M212.2,307.2v17.1
+			 M212.4,307.1l17.1,17.1 M230.1,306.5l-18.2,18.2 M212.4,325.1l17.1,17.1 M230.1,324.6l-18.2,18.2 M230.4,306.5l17.1,18
+			 M248.1,305.9l-18.2,18.2 M265.7,323.7l-17.1-17.1 M266.3,306L248,324.3 M212.2,343l17.1,17.1 M229.9,342.5l-18.2,18.2
+			 M212.4,360.7l17.1,17.1 M230.1,360.1l-18.2,18.2 M212.4,378.3l17.1,15.9 M230.1,377.8l-18.2,17"/>
+		  <circle id="warehouse_1_" class="st0 circle" cx="850.2" cy="644" r="97"/>
+		  <path id="warehouse" class="st3 icon" d="M906.3,616H795l55.7-31.6L906.3,616z M830.6,671.6h-18v18h18V671.6z M853.5,671.6h-18v18h18
+			V671.6z M830.6,649.1h-18v18h18V649.1z M876.7,671.6h-18v18h18V671.6z M853.5,649.1h-18v18h18V649.1z M906.3,616h-12.8H808h-13v13
+			v60.5h13v-60.5h85.5v60.5h13V616H906.3z"/>
+		  <circle id="truck_1_" class="st1 circle" cx="1059" cy="447.4" r="83.4"/>
+		  <path id="truck" class="st3 icon" d="M1047.9,459.5H1014c-6.6,0-12-5.4-12-12v-21.7c0-6.6,5.4-12,12-12h33.9c6.6,0,12,5.4,12,12v21.7
+			C1059.9,454.1,1054.5,459.5,1047.9,459.5z M1019.9,463.7h-22.1v9.9h15.8C1013.6,469.2,1016.2,465.5,1019.9,463.7z M1119.7,473.6
+			v-3.8h-3.9v-2.1v-3.9v-20h-51.6v20h-34.9c3.7,1.7,6.2,5.5,6.2,9.9h45.4c0-6,4.9-10.9,10.9-10.9s10.9,4.9,10.9,10.9H1119.7z
+			 M1033.3,473.6c0,4.8-3.9,8.8-8.8,8.8c-4.8,0-8.8-3.9-8.8-8.8s3.9-8.8,8.8-8.8C1029.4,464.8,1033.3,468.7,1033.3,473.6z
+			 M1027.6,473.6c0-1.7-1.4-3-3-3c-1.7,0-3,1.4-3,3c0,1.7,1.4,3,3,3C1026.2,476.6,1027.6,475.3,1027.6,473.6z M1100.4,473.6
+			c0,4.8-3.9,8.8-8.8,8.8s-8.8-3.9-8.8-8.8s3.9-8.8,8.8-8.8S1100.4,468.7,1100.4,473.6z M1094.7,473.6c0-1.7-1.4-3-3-3
+			c-1.7,0-3,1.4-3,3c0,1.7,1.4,3,3,3C1093.3,476.6,1094.7,475.3,1094.7,473.6z M1096.2,443.7v-4h-10.7v-9.4h-8v13.4 M1115.7,443.7
+			l-12.5-23.9h-39.1v23.9 M1106.8,443.7l-8.4-16.1h-26.5v16.1"/>
+		  <circle id="barcode_1_" class="st1 circle" cx="591.2" cy="644" r="52.7"/>
+		  <path id="barcode" class="st4 icon" d="M566.9,670.2L566.9,670.2c-1.5,0-2.7-1.2-2.7-2.7v-45.2c0-1.5,1.2-2.7,2.7-2.7l0,0
+			c1.5,0,2.7,1.2,2.7,2.7v45.2C569.6,669,568.4,670.2,566.9,670.2z M579.4,667.6v-45.2c0-1.5-1.2-2.7-2.7-2.7l0,0
+			c-1.5,0-2.7,1.2-2.7,2.7v45.2c0,1.5,1.2,2.7,2.7,2.7l0,0C578.2,670.2,579.4,669,579.4,667.6z M589,667.6v-45.2
+			c0-1.5-1.2-2.7-2.7-2.7l0,0c-1.5,0-2.7,1.2-2.7,2.7v45.2c0,1.5,1.2,2.7,2.7,2.7l0,0C587.8,670.2,589,669,589,667.6z M598.8,667.6
+			v-45.2c0-1.5-1.2-2.7-2.7-2.7l0,0c-1.5,0-2.7,1.2-2.7,2.7v45.2c0,1.5,1.2,2.7,2.7,2.7l0,0C597.6,670.2,598.8,669,598.8,667.6z
+			 M608.2,667.6v-45.2c0-1.5-1.2-2.7-2.7-2.7l0,0c-1.5,0-2.7,1.2-2.7,2.7v45.2c0,1.5,1.2,2.7,2.7,2.7l0,0
+			C607,670.2,608.2,669,608.2,667.6z M618,667.6v-45.2c0-1.5-1.2-2.7-2.7-2.7l0,0c-1.5,0-2.7,1.2-2.7,2.7v45.2c0,1.5,1.2,2.7,2.7,2.7
+			l0,0C616.8,670.2,618,669,618,667.6z"/>
+		  <circle id="building_1_" class="st0 circle" cx="374.8" cy="579.5" r="64.5"/>
+		  <path id="building" class="st3 icon" d="M351.8,607.2h-19.6v-46.7h19.6V607.2z M345.9,567.4h-7.7v7.7h7.7V567.4z M394.6,550.4H354v56.7
+			h40.6V550.4z M345.9,578.8h-7.7v7.7h7.7V578.8z M345.9,590.2h-7.7v7.7h7.7V590.2z M416.4,560.6h-19.6v46.7h19.6V560.6z
+			 M410.4,567.5h-7.7v7.7h7.7V567.5z M410.4,578.9h-7.7v7.7h7.7V578.9z M410.4,590.3h-7.7v7.7h7.7V590.3z M370.6,558.1h-10.8v10.8
+			h10.8V558.1z M388.8,558.1H378v10.8h10.8V558.1z M370.6,573.5h-10.8v10.8h10.8V573.5z M388.8,573.5H378v10.8h10.8V573.5z
+			 M370.6,588.7h-10.8v10.8h10.8V588.7z M388.8,588.7H378v10.8h10.8V588.7z"/>
+		  <circle id="checklist_1_" class="st1 circle" cx="703" cy="147.3" r="52.7"/>
+		  <path id="checklist" class="st5 icon" d="M719.7,154.5c-7.4,0-13.5,6-13.5,13.5c0,7.4,6,13.5,13.5,13.5s13.5-6,13.5-13.5
+			C733.2,160.5,727.2,154.5,719.7,154.5z M717.6,174.9L717.6,174.9l-0.2,0.1l-6.1-6.1l3.4-3.4l2.7,2.7l7.3-7.3l3.4,3.4L717.6,174.9z
+			 M722.9,120.7h-5.3l0,3.7l-31.3-0.1l0-3.5h-5.3c-1.2,0-2.1,0.9-2.1,2.1v55.1c0,1.2,0.9,2.1,2.1,2.1h26.5c-2.1-2.2-3.6-4.9-4.3-8
+			h-12v-3.8h11.6c0-1.2,0.1-2.4,0.4-3.6h-11.9v-3.8h13.2c0.6-1.3,1.4-2.5,2.3-3.6h-15.5v-3.8h20c2.5-1.5,5.4-2.3,8.5-2.3
+			c1.8,0,3.6,0.3,5.3,0.8v-29.3C725,121.7,724.1,120.7,722.9,120.7z M691.2,131h28.5v3.8h-28.5V131z M684.1,131h5.1v3.8h-5.1V131z
+			 M684.1,146.2h5.1v3.8h-5.1V146.2z M689.2,172h-5.1v-3.8h5.1V172z M689.2,164.7h-5.1v-3.8h5.1V164.7z M689.2,157.4h-5.1v-3.8h5.1
+			V157.4z M689.2,142.4h-5.1v-3.8h5.1V142.4z M719.7,150h-28.5v-3.8h28.5V150z M719.7,142.4h-28.5v-3.8h28.5V142.4z M707.8,117.1
+			c0-3.2-2.6-5.9-5.8-5.9s-5.9,2.6-5.9,5.8l-9.8,0l0,7.2l31.3,0.1l0-7.2L707.8,117.1z M701.9,119.8c-1.5,0-2.7-1.2-2.7-2.7
+			c0-1.5,1.2-2.7,2.7-2.7c1.5,0,2.7,1.2,2.7,2.7C704.6,118.6,703.4,119.8,701.9,119.8z"/>
+		</g>
+		</svg>-->
+        </div>
+
+        <div
+          class="col-md-12 col-xs-12 mobile-apollo-vector"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img
+            src="images/mobile-apollo-vector.svg"
+            alt="mobile-apollo-vector"
+            width="100%"
+          />
+          <!--<svg style="width: 100%; height: 100%;"
+                 xmlns:dc="http://purl.org/dc/elements/1.1/"
+                 xmlns:cc="http://creativecommons.org/ns#"
+                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                 xmlns:svg="http://www.w3.org/2000/svg"
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                 xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                 width="400.70078"
+                 height="850"
+                 viewBox="0 0 106.01874 224.89584"
+                 version="1.1"
+                 id="svg3864"
+                 inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+                 sodipodi:docname="mobile-apollo-vector.svg">
+                <defs
+                        id="defs3858" />
+                <sodipodi:namedview
+                        id="base"
+                        pagecolor="#ffffff"
+                        bordercolor="#666666"
+                        borderopacity="1.0"
+                        inkscape:pageopacity="0.0"
+                        inkscape:pageshadow="2"
+                        inkscape:zoom="0.35"
+                        inkscape:cx="-101.26058"
+                        inkscape:cy="561.78969"
+                        inkscape:document-units="mm"
+                        inkscape:current-layer="layer2"
+                        showgrid="false"
+                        inkscape:window-width="1366"
+                        inkscape:window-height="715"
+                        inkscape:window-x="1358"
+                        inkscape:window-y="236"
+                        inkscape:window-maximized="1"
+                        units="px" />
+                <metadata
+                        id="metadata3861">
+                    <rdf:RDF>
+                        <cc:Work
+                                rdf:about="">
+                            <dc:format>image/svg+xml</dc:format>
+                            <dc:type
+                                    rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                            <dc:title></dc:title>
+                        </cc:Work>
+                    </rdf:RDF>
+                </metadata>
+                <g
+                        inkscape:groupmode="layer"
+                        id="layer3"
+                        inkscape:label="Lines"
+                        transform="translate(0,-72.10415)">
+                    <path
+                            style="fill:none;stroke:#dfdf00;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0"
+                            d="m 25.097619,152.46198 h 20.599702 v 15.875"
+                            id="path4024"
+                            inkscape:connector-curvature="0" />
+                    <path
+                            style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.43137255"
+                            d="m 18.105059,108.23874 v 19.84378"
+                            id="path4837"
+                            inkscape:connector-curvature="0" />
+                    <path
+                            style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.43137255"
+                            d="m 54.052034,119.29266 v 48.28837"
+                            id="path4839"
+                            inkscape:connector-curvature="0" />
+                    <path
+                            style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.43137255"
+                            d="m 75.935417,156.05276 v 18.14285 H 59.493452"
+                            id="path4841"
+                            inkscape:connector-curvature="0" />
+                    <path
+                            style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.43137255"
+                            d="m 59.304463,189.69264 h 17.00893"
+                            id="path4843"
+                            inkscape:connector-curvature="0" />
+                    <path
+                            style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.43137255"
+                            d="m 21.506845,200.84294 v 11.33928"
+                            id="path4845"
+                            inkscape:connector-curvature="0" />
+                    <path
+                            style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.43137255"
+                            d="m 48.532143,201.22091 v 19.46577 h 18.520833 v 15.875"
+                            id="path4849"
+                            inkscape:connector-curvature="0" />
+                    <path
+                            style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.43137255"
+                            d="m 33.167863,234.15747 v 23.00392 H 20.372917"
+                            id="path4851"
+                            inkscape:connector-curvature="0" />
+                    <path
+                            style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.43137255"
+                            d="m 25.097619,152.46198 v 16.25298"
+                            id="path4853"
+                            inkscape:connector-curvature="0" />
+                </g>
+                <g
+                        inkscape:groupmode="layer"
+                        id="layer2"
+                        inkscape:label="Lapotp"
+                        style="display:inline"
+                        transform="translate(0,-72.10415)">
+                    <image
+                            id="apollo-laptop"
+                            y="152.44946"
+                            x="0.054384615"
+                            id="image4014"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAMgCAMAAADsrvZaAAAAw1BMVEUAAAAw2NgQmp8w2Ngw2NgQ
+mp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8T
+oKQQmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Qmp8Q
+mp8Qmp8Qmp8Qmp8Qmp8Qm6AQmp8Qmp8Sn6MQmp8Qmp8w2Ngw2Ngw2NgfuLokwsQw2Ngw2Ngw2Ngw
+2NgQmp8gubxpVrmzAAAAPnRSTlMAgEC/QN8K/NkE+Q4hLxeupmTpJbXP5SkSWAbv9/S9SqKCyWsc
+eFKf03GJYH3DlDqPXEYfM5vsplDfxY9gMEboR9MAABcBSURBVHja7MGBAAAAAICg/akXqQIAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYPbg
+QAAAAAAAyP+1EVRVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+VVVVVVVVVVVVVVVVhZ07OmkgCMMoOospIpWsgSTbf1k+iqCXCBlh4jk9XOb7XwYAAAAAAAAAAAAA
+AAAAfu1+2+CpbvfxIs7bfsDT7dt5vICLPJhkv4zlXQ+Y5joW937AJ4V8dTlgqqVX1tn9wWT7ypf6
+dsBk21iXB4Tp9rGs0wHTncaqLCy+Y2MJhB8JRCAEgQiEIBCBEAQiEIJABEIQiEAIAhEIQSACIQhE
+IASBCIQgEIEQBCIQgkAEQhCIQAgCEQhBIAIhCEQgBIEIhCAQgRAEIhCCQB4M5A0e9C8DWfc7I/6a
+QEAgAkEgAmEIRCAEgQiEIBCBEAQiEIJABEIQiEAIAhEIQSACIQhEIASBCIQgEIEQBCIQgkAEQhCI
+QAgCEQhBIAIhCEQgBIEIhCAQgRAEIhCCQARCEIhACAL5YO/elg0HojCOr1IlkcS2nTaSSBzCRhDD
+cL3e/61mpmqupqY6oYOszvd7AS78pU8aAgEFBIJAQAGBIBBQQCAIBBQQCAIBBQSCQEABgSAQUEAg
+CAQUEAgCAQUEgkBAAYEgEFBAIAikLNbgsl+n2Wbe/fxjvsnSQ2828AgQSI1Z41mSzuNt3+X/cvvb
+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
+BEEEIQgiCEEQQQiCCEIQRBCCIIIQBBGEIIggBEGWd+Bn7w5W24aCKAwPKl7JQStDwGDQxsZoYzDE
+xAtP3v+pSktoStNeTImiMzn/9wg2RzNzde/VR/iq1+M83YCZPUVdlxsws0vUdb4BMztHYYzpeIcR
+nSYL/0aD9btHEoIZXR6jOrosvKG/eu9MEcEsLqXn8+i78dXp+cXE9fptWVebn/rl+TS+6vqopxvS
+zbAPAf20SztDF7X0fvHYPISKbpV2hlJV5GGbbg4hpN+kna3OA4p8iOeDhGgz/Hd2IaY37LI2Vbqs
+Me2sQ02XfsYooafBUmC4lrWtUUKOaUex+53SzzEq8Ht0rUJQn37kRsG/Sjua/4vhmJ5RQdrRHA79
+KjkBEUVAVEQFaUdxEYuAyEo7m1CUhqKC9KO4/u74ppCAiJpCzyENRQXpR/BFyDodRQVpSG8dy+9A
+DgFRpnaizXGjCQERJnYYwTQfBESY0ka5U5qKCtLUTqXNmhx3YRGQAlaHY7e08eB3HIeAAAQEICDA
+GwICNBAQoIGAAA0EBGggIEADAQEaCAjQQECABgICNBAQoMEzIL6brfEfvvjdAFynAR2aN/j9aZ/A
+IiQ+M0yPBVE1OixKCO7lWUCYQnAnxwnkJ7/P3GJxmleIU0OgoVD9+GHPpI5PtCozf/wyed4OiwUM
+itfr32HdAbNbBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA39mDAwEAAAAAIP/XRlBVVVVVVVVVVVVV
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVFfbgQAAAAAAA
+yP+1EVRVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+VVVVVVVVpT04JAAAAAAQ9P+1K2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAgqKFBnQ1u
+ud8AAAAASUVORK5CYII=
+"
+                            preserveAspectRatio="none"
+                            height="68.410202"
+                            width="68.410202" />
+                </g>
+                <g
+                        inkscape:label="icons"
+                        inkscape:groupmode="layer"
+                        id="layer1"
+                        style="display:inline"
+                        transform="translate(0,-72.10415)">
+                    <g
+                            id="vector"
+                            transform="matrix(0.26458333,0,0,0.26458333,-62.581515,81.797375)">
+
+
+
+
+
+
+
+
+                        <circle
+                                r="64.5"
+                                cy="237.93222"
+                                cx="523.69238"
+                                class="st0 circle"
+                                id="house_1_"
+                                style="fill:#30d8d8" />
+
+                        <path
+                                d="m 531.09236,226.23221 c 0,4.1 -3.3,7.4 -7.4,7.4 -4.1,0 -7.4,-3.3 -7.4,-7.4 0,-4.1 3.3,-7.4 7.4,-7.4 4.1,0 7.4,3.3 7.4,7.4 z m -7.4,-21.5 -28.4,21.1 v 41.2 h 20.4 v -24.3 h 15.9 v 24.3 h 20.4 v -41.2 z m 33.5,24.8 2.2,-3 -35.8,-26.4 -35.7,26.4 2.2,3 33.5,-24.8 z"
+                                class="st3 icon"
+                                id="house"
+                                inkscape:connector-curvature="0"
+                                style="fill:none;stroke:#ffffff;stroke-width:2;stroke-miterlimit:10" />
+
+                        <circle
+                                data-aos-duration="1000"
+                                data-aos="zoom-in"
+                                r="67"
+                                cy="616.43268"
+                                cx="487.87262"
+                                class="st0 circle"
+                                id="ship_1_"
+                                style="fill:#30d8d8;stroke-width:0.69072163" />
+
+                        <path
+                                d="m 530.49013,636.46353 -12.43299,12.70927 h -61.81958 l -12.43299,-12.70927 c -3.59176,-3.72991 -3.59176,-9.80826 0,-13.46908 h 86.61649 c 3.66083,3.66082 3.66083,9.73917 0.0691,13.46908 z M 473.9891,598.75012 v 24.03711 h -24.03711 v -24.03711 z m -5.66391,9.32474 c 0,-2.00309 -1.58866,-3.59175 -3.59176,-3.59175 h -5.4567 c -2.00309,0 -3.59175,1.58866 -3.59175,3.59175 v 5.4567 c 0,2.00309 1.58866,3.59175 3.59175,3.59175 h 5.4567 c 2.0031,0 3.59176,-1.58866 3.59176,-3.59175 z m 28.18144,3.03917 h -11.74227 v 11.74227 h 11.74227 z m 13.19278,0 h -11.74227 v 11.74227 h 11.74227 z m 13.26186,0 H 511.219 v 11.74227 h 11.74227 z m -13.26186,-26.17834 h -11.74227 v 11.74226 h 11.74227 z m -6.56185,13.05463 h -11.74227 v 11.74227 h 11.74227 z m 13.19278,0 h -11.74227 v 11.74227 h 11.74227 z m -46.14021,0.62165 v -8.49587 c 0,-1.51958 -1.2433,-2.76288 -2.76288,-2.76288 h -10.9134 c -1.51959,0 -2.76289,1.2433 -2.76289,2.76288 v 8.49587 z M 464.45714,587.146 v -8.49588 h -4.48969 v 8.49588 z"
+                                class="st3 icon"
+                                id="ship"
+                                inkscape:connector-curvature="0"
+                                style="fill:none;stroke:#ffffff;stroke-width:1.38144326;stroke-miterlimit:10" />
+
+                        <circle
+                                r="63.400002"
+                                cy="444.50461"
+                                cx="560.6861"
+                                class="st1 circle"
+                                id="crane_1_"
+                                style="fill:#109a9f;stroke-width:0.76019186" />
+
+                        <path
+                                d="m 539.32477,413.79286 v 2.96475 14.89976 h -14.36763 v -17.86451 z m 3.80096,69.40552 -0.076,-55.41799 h -3.5729 m -5.85348,55.34197 h 4.10503 42.41871 m -22.95779,0.22806 -0.45612,-53.74557 h 39.07386 l -10.79472,-13.68345 -28.27914,-0.22806 -4.33309,-7.1458 h -4.86523 l -4.63717,7.98201 -3.34484,0.15204 m 0.076,8.97026 h 3.49689 v -6.99376 h -3.49689 m 27.06283,41.58249 v 14.36763 h 26.37866 v -14.36763 h -22.42566 z m 21.96955,0 -8.81823,-7.5259 -8.21007,7.5259 m 2.3566,-30.55971 v 3.04077 h 12.23908 v -3.04077 m -6.08153,11.85899 h -1.74844 v 3.57291 h 3.5729 v -3.57291 h -1.82446 v -8.89424 m -2.58465,17.86451 c 0.45611,0.98825 1.5964,2.28057 2.66067,2.28057 0.98825,0 1.90048,-0.83621 1.9765,-2.28057 0.076,-1.44437 -1.74844,-2.73669 -1.74844,-2.73669 v -0.83621 -1.90048 m -23.64197,-15.4319 v -13.83549 m -13.60743,0.83621 v 12.99928 m 0.15203,-13.0753 12.99929,12.99928 m 0.45611,-13.45539 -13.83549,13.83549 m 0.38009,0.30408 12.99929,12.99928 m 0.45611,-13.37938 -13.83549,13.83549 m 14.06355,-27.59496 12.99928,13.68345 m 0.45611,-14.13957 -13.83549,13.83549 m 27.21487,-0.30407 -12.99928,-12.99928 m 13.4554,-0.45612 -13.91152,13.91151 m -27.21486,14.21559 12.99928,12.99928 m 0.45611,-13.37938 -13.83549,13.83549 m 0.53213,0 12.99929,12.99929 m 0.45611,-13.4554 -13.83549,13.83549 m 0.38009,0 12.99929,12.08705 m 0.45611,-12.46714 -13.83549,12.92326"
+                                class="st3 icon"
+                                id="crane"
+                                inkscape:connector-curvature="0"
+                                style="fill:none;stroke:#ffffff;stroke-width:1.52038372;stroke-miterlimit:10" />
+
+                        <circle
+                                cy="544.56403"
+                                cx="332.11514"
+                                class="st0 circle"
+                                id="warehouse_1_"
+                                style="fill:#30d8d8;stroke-width:0.68758172"
+                                r="66.695427" />
+
+                        <path
+                                d="m 370.68847,525.31168 h -76.52785 l 38.29831,-21.72759 z m -52.04994,38.22954 h -12.37646 v 12.37648 h 12.37646 z m 15.74562,0 h -12.37646 v 12.37648 h 12.37646 z m -15.74562,-15.47058 h -12.37646 v 12.37646 h 12.37646 z m 31.69752,15.47058 h -12.37647 v 12.37648 h 12.37647 z m -15.9519,-15.47058 h -12.37646 v 12.37646 h 12.37646 z m 36.30432,-22.75896 h -8.80105 -58.78823 -8.93857 v 8.93857 41.59869 h 8.93857 v -41.59869 h 58.78823 v 41.59869 h 8.93857 v -50.53726 z"
+                                class="st3 icon"
+                                id="warehouse"
+                                inkscape:connector-curvature="0"
+                                style="fill:none;stroke:#ffffff;stroke-width:1.37516344;stroke-miterlimit:10" />
+
+                        <circle
+                                cy="223.14615"
+                                cx="327.64957"
+                                class="st1 circle"
+                                id="truck_1_"
+                                style="fill:#109a9f;stroke-width:0.83043003"
+                                r="69.257866" />
+
+                        <path
+                                d="m 318.43177,233.19434 h -28.15158 c -5.48084,0 -9.96516,-4.48433 -9.96516,-9.96516 v -18.02034 c 0,-5.48083 4.48432,-9.96516 9.96516,-9.96516 h 28.15158 c 5.48084,0 9.96516,4.48433 9.96516,9.96516 v 18.02034 c 0,5.48083 -4.48432,9.96516 -9.96516,9.96516 z m -23.25204,3.4878 h -18.35251 v 8.22126 h 13.1208 c 0,-3.65389 2.15912,-6.72648 5.23171,-8.22126 z m 82.87691,8.22126 v -3.15564 h -3.23867 v -1.7439 -3.23868 -16.6086 h -42.85019 v 16.6086 h -28.98201 c 3.07259,1.41174 5.14867,4.56737 5.14867,8.22126 h 37.70152 c 0,-4.98258 4.06911,-9.05169 9.05169,-9.05169 4.98258,0 9.05168,4.06911 9.05168,9.05169 h 14.11731 z m -71.74915,0 c 0,3.98606 -3.23868,7.30778 -7.30778,7.30778 -3.98607,0 -7.30779,-3.23867 -7.30779,-7.30778 0,-4.06911 3.23868,-7.30779 7.30779,-7.30779 4.0691,0 7.30778,3.23868 7.30778,7.30779 z m -4.73345,0 c 0,-1.41173 -1.1626,-2.49129 -2.49129,-2.49129 -1.41173,0 -2.49129,1.1626 -2.49129,2.49129 0,1.41173 1.1626,2.49129 2.49129,2.49129 1.32869,0 2.49129,-1.07956 2.49129,-2.49129 z m 60.4553,0 c 0,3.98606 -3.23867,7.30778 -7.30778,7.30778 -4.06911,0 -7.30778,-3.23867 -7.30778,-7.30778 0,-4.06911 3.23867,-7.30779 7.30778,-7.30779 4.06911,0 7.30778,3.23868 7.30778,7.30779 z m -4.73345,0 c 0,-1.41173 -1.1626,-2.49129 -2.49129,-2.49129 -1.41173,0 -2.49129,1.1626 -2.49129,2.49129 0,1.41173 1.16261,2.49129 2.49129,2.49129 1.32869,0 2.49129,-1.07956 2.49129,-2.49129 z m 1.24565,-24.82986 v -3.32172 h -8.8856 v -7.80604 h -6.64344 v 11.12776 m 31.72242,0 -10.38037,-19.84728 h -32.46982 v 19.84728 m 35.45937,0 -6.97562,-13.36992 h -22.00639 v 13.36992"
+                                class="st3 icon"
+                                id="truck"
+                                inkscape:connector-curvature="0"
+                                style="fill:none;stroke:#ffffff;stroke-width:1.66086006;stroke-miterlimit:10" />
+
+                        <circle
+                                r="52.700001"
+                                cy="704.60913"
+                                cx="306.33694"
+                                class="st1 circle"
+                                id="barcode_1_"
+                                style="fill:#109a9f" />
+
+                        <path
+                                d="m 282.03698,730.80915 v 0 c -1.5,0 -2.7,-1.2 -2.7,-2.7 v -45.2 c 0,-1.5 1.2,-2.7 2.7,-2.7 v 0 c 1.5,0 2.7,1.2 2.7,2.7 v 45.2 c 0,1.5 -1.2,2.7 -2.7,2.7 z m 12.5,-2.6 v -45.2 c 0,-1.5 -1.2,-2.7 -2.7,-2.7 v 0 c -1.5,0 -2.7,1.2 -2.7,2.7 v 45.2 c 0,1.5 1.2,2.7 2.7,2.7 v 0 c 1.5,-0.1 2.7,-1.3 2.7,-2.7 z m 9.6,0 v -45.2 c 0,-1.5 -1.2,-2.7 -2.7,-2.7 v 0 c -1.5,0 -2.7,1.2 -2.7,2.7 v 45.2 c 0,1.5 1.2,2.7 2.7,2.7 v 0 c 1.5,-0.1 2.7,-1.3 2.7,-2.7 z m 9.8,0 v -45.2 c 0,-1.5 -1.2,-2.7 -2.7,-2.7 v 0 c -1.5,0 -2.7,1.2 -2.7,2.7 v 45.2 c 0,1.5 1.2,2.7 2.7,2.7 v 0 c 1.5,-0.1 2.7,-1.3 2.7,-2.7 z m 9.4,0 v -45.2 c 0,-1.5 -1.2,-2.7 -2.7,-2.7 v 0 c -1.5,0 -2.7,1.2 -2.7,2.7 v 45.2 c 0,1.5 1.2,2.7 2.7,2.7 v 0 c 1.5,-0.1 2.7,-1.3 2.7,-2.7 z m 9.8,0 v -45.2 c 0,-1.5 -1.2,-2.7 -2.7,-2.7 v 0 c -1.5,0 -2.7,1.2 -2.7,2.7 v 45.2 c 0,1.5 1.2,2.7 2.7,2.7 v 0 c 1.5,-0.1 2.7,-1.3 2.7,-2.7 z"
+                                class="st4 icon"
+                                id="barcode"
+                                inkscape:connector-curvature="0"
+                                style="fill:none;stroke:#ffffff;stroke-miterlimit:10" />
+
+                        <circle
+                                r="46.317257"
+                                cy="68.082642"
+                                cx="305.37451"
+                                class="st0 circle"
+                                id="building_1_"
+                                style="fill:#30d8d8;stroke-width:0.71809697" />
+
+                        <path
+                                d="M 288.8583,87.973923 H 274.7836 V 54.438792 h 14.0747 z m -4.23678,-28.580261 h -5.52933 v 5.52935 h 5.52933 z m 34.97133,-12.20765 h -29.15473 v 40.716091 h 29.15473 z m -34.97133,20.393951 h -5.52933 v 5.52935 h 5.52933 z m 0,8.18631 h -5.52933 v 5.52935 h 5.52933 z m 50.62584,-21.255671 h -14.0747 v 33.535131 h 14.0747 z m -4.30858,4.95487 h -5.52934 v 5.52934 h 5.52934 z m 0,8.186301 h -5.52934 v 5.52935 h 5.52934 z m 0,8.18631 h -5.52934 v 5.52935 h 5.52934 z M 302.35853,52.715362 h -7.75546 v 7.75544 h 7.75546 z m 13.06936,0 h -7.75545 v 7.75544 h 7.75545 z m -13.06936,11.05869 h -7.75546 v 7.755451 h 7.75546 z m 13.06936,0 h -7.75545 v 7.755451 h 7.75545 z m -13.06936,10.915071 h -7.75546 v 7.75545 h 7.75546 z m 13.06936,0 h -7.75545 v 7.75545 h 7.75545 z"
+                                class="st3 icon"
+                                id="building"
+                                inkscape:connector-curvature="0"
+                                style="fill:none;stroke:#ffffff;stroke-width:1.43619394;stroke-miterlimit:10" />
+
+                        <circle
+                                r="52.700001"
+                                cy="108.91421"
+                                cx="436.31976"
+                                class="st1 circle"
+                                id="checklist_1_"
+                                style="fill:#109a9f" />
+
+                        <path
+                                d="m 453.01972,116.1142 c -7.4,0 -13.5,6 -13.5,13.5 0,7.4 6,13.5 13.5,13.5 7.5,0 13.5,-6 13.5,-13.5 0,-7.5 -6,-13.5 -13.5,-13.5 z m -2.1,20.4 v 0 l -0.2,0.1 -6.1,-6.1 3.4,-3.4 2.7,2.7 7.3,-7.3 3.4,3.4 z m 5.3,-54.199997 h -5.3 v 3.7 l -31.3,-0.1 v -3.5 h -5.3 c -1.2,0 -2.1,0.9 -2.1,2.1 V 139.6142 c 0,1.2 0.9,2.1 2.1,2.1 h 26.5 c -2.1,-2.2 -3.6,-4.9 -4.3,-8 h -12 v -3.8 h 11.6 c 0,-1.2 0.1,-2.4 0.4,-3.6 h -11.9 v -3.8 h 13.2 c 0.6,-1.3 1.4,-2.5 2.3,-3.6 h -15.5 v -3.8 h 20 c 2.5,-1.5 5.4,-2.3 8.5,-2.3 1.8,0 3.6,0.3 5.3,0.8 V 84.314203 c -0.1,-1 -1,-2 -2.2,-2 z m -31.7,10.299996 h 28.5 v 3.8 h -28.5 z m -7.1,0 h 5.1 v 3.8 h -5.1 z m 0,15.200001 h 5.1 v 3.8 h -5.1 z m 5.1,25.8 h -5.1 v -3.8 h 5.1 z m 0,-7.3 h -5.1 v -3.8 h 5.1 z m 0,-7.3 h -5.1 v -3.8 h 5.1 z m 0,-15 h -5.1 v -3.8 h 5.1 z m 30.5,7.6 h -28.5 v -3.8 h 28.5 z m 0,-7.6 h -28.5 v -3.8 h 28.5 z m -11.9,-25.299997 c 0,-3.2 -2.6,-5.9 -5.8,-5.9 -3.2,0 -5.9,2.6 -5.9,5.8 h -9.8 v 7.2 l 31.3,0.1 v -7.2 z m -5.9,2.7 c -1.5,0 -2.7,-1.2 -2.7,-2.7 0,-1.5 1.2,-2.7 2.7,-2.7 1.5,0 2.7,1.2 2.7,2.7 0,1.5 -1.2,2.7 -2.7,2.7 z"
+                                class="st5 icon"
+                                id="checklist"
+                                inkscape:connector-curvature="0"
+                                style="fill:none;stroke:#fcfcfc;stroke-miterlimit:10" />
+
+                    </g>
+                </g>
+                <style
+                        id="style3909"
+                        type="text/css">
+                    .st0 {
+                        fill: #30D8D8;
+                    }
+
+                    .st1 {
+                        fill: #109A9F;
+                    }
+
+                    .st2 {
+                        fill: none;
+                        stroke: #808080;
+                        stroke-miterlimit: 10;
+                    }
+
+                    .st3 {
+                        fill: none;
+                        stroke: #FFFFFF;
+                        stroke-width: 2;
+                        stroke-miterlimit: 10;
+                    }
+
+                    .st4 {
+                        fill: none;
+                        stroke: #FFFFFF;
+                        stroke-miterlimit: 10;
+                    }
+
+                    .st5 {
+                        fill: none;
+                        stroke: #FCFCFC;
+                        stroke-miterlimit: 10;
+                    }
+
+                    @media (max-width: 768px) {
+                        .pull-gt-sm {
+                            float: none !important;
+                        }
+                    }
+                </style>
+            </svg>-->
+        </div>
+
+        <div
+          class="our-solutions col-md-12 col-xs-12"
+          style="margin-top: 150px;"
+        >
+          <div
+            class="col-md-12 heading col-xs-12"
+            style="text-align: center; padding-bottom: 10px;"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <b class="heading-border" style="font-size: 50px;">Our Solutions</b>
+          </div>
+
+          <div
+            class="logistics col-md-10 col-md-offset-1 col-xs-12"
+            style="margin-top: 50px;"
+            id="products-nav"
+          >
+            <div class="col-md-6 col-xs-12">
+              <div
+                class="col-md-12 col-xs-12 product p-relative logistics-automation"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                style="
+                  height: 285px;
+                  background-color: rgba(0, 0, 0, 0.7);
+                  padding: 20px 0;
+                  border-radius: 5px;
+                "
+              >
+                <div class="col-md-12">
+                  <div class="col-md-2 p-0 text-right">
+                    <img
+                      src="images/svg/package.svg"
+                      alt="package"
+                      width="45"
+                    />
+                  </div>
+
+                  <div class="col-md-10 p-0">
+                    <div class="title-30 col-md-12" style="color: #fff;">
+                      <b>Logistics Automation</b>
+                    </div>
+                    <h4
+                      class="heading-h4 col-md-12 col-xs-12"
+                      style="color: rgba(255, 255, 255, 0.9); font-size: 15px;"
+                    >
+                      Optimize the efficiency of your logistics operations,
+                      whether you have a port, terminal, warehouse, fleet of
+                      transportation, we can help you reduce cost, errors, and
+                      improve operational workflow.
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-xs-12 col-md-offset-3 margin-top-10"
+                  style="position: absolute; bottom: 20px; text-align: center;"
+                >
+                  <a href="our-solutions.html">
+                    <button
+                      class="apollo-button"
+                      style="
+                        background-color: transparent !important;
+                        border: 1px solid #fff;
+                        border-radius: 5px;
+                      "
+                    >
+                      Learn More
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+              <div
+                class="col-md-12 col-xs-12 product p-relative business-automation"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                style="
+                  height: 285px;
+                  background-color: rgba(0, 0, 0, 0.7);
+                  padding: 20px 0;
+                  border-radius: 5px;
+                "
+              >
+                <div class="col-md-12">
+                  <div class="col-md-2 p-0 text-right">
+                    <img
+                      src="images/svg/presentation.svg"
+                      alt="presentation"
+                      width="45"
+                    />
+                  </div>
+
+                  <div class="col-md-10 p-0">
+                    <div class="title-30 col-md-12" style="color: #fff;">
+                      <b>Business Automation</b>
+                    </div>
+                    <h4
+                      class="heading-h4 col-md-12 col-xs-12"
+                      style="color: rgba(255, 255, 255, 0.9); font-size: 15px;"
+                    >
+                      We have solutions built to help your business manage your
+                      sales, purchasing, and ledgers with our AESi Books.
+                      Automate your Payroll, Employee Database and Time &
+                      Attendance, among other things with AESi People.
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-xs-12 col-md-offset-3 margin-top-10"
+                  style="position: absolute; bottom: 20px; text-align: center;"
+                >
+                  <a href="our-solutions.html">
+                    <button
+                      class="apollo-button"
+                      style="
+                        background-color: transparent !important;
+                        border: 1px solid #fff;
+                        border-radius: 5px;
+                      "
+                    >
+                      Learn More
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--<div class="col-md-10 col-md-offset-1 col-xs-12 apollo-screenshots margin-top-30"
+             style="height: 100vh; display: flex; align-items: center;">
+            <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="images/client-portal.png" alt="" style="width: 100%" class="material-box-shadow">
+                &lt;!&ndash;<h4 class="color-109A9F">Apollo Login</h4>&ndash;&gt;
+            </div>
+
+            <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="images/apollo-dashboard.png" alt="" style="width: 100%" class="material-box-shadow">
+            </div>
+
+            <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="images/apollo-vessel-tracker.png" alt="" style="width: 100%" class="material-box-shadow">
+            </div>
+        </div>-->
+
+        <!--something-->
+
+        <div
+          style="height: 100vh; display: flex; align-items: center;"
+          class="col-lg-10 col-lg-offset-1 something-here"
+        >
+          <div
+            class="heading col-lg-6col-md-12 text-center something-here-text"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            <b class="heading-border" style="font-size: 50px;"
+              >Custom Software Development</b
+            >
+            <h4 class="heading-h4" style="margin-top: 35px;">
+              We can build custom-made automation solutions that will fit into
+              your business needs.
+            </h4>
+          </div>
+
+          <div
+            class="col-lg-6 text-center contfloat col-xs-12"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <img
+              src="images/it consulting icon.png"
+              alt="responsive"
+              id="isometric"
+              style="width: 100%;"
+            />
+          </div>
+        </div>
+
+        <div
+          class="col-md-12 p-0 benefits col-xs-12"
+          style="display: flex; align-items: center;"
+        >
+          <div
+            class="benefits-text col-md-10 col-md-offset-1 color-white text-center col-xs-12"
+            style="font-size: 50px;"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            "Built to increase your productivity, reduce cost, and just enhance
+            how you do your work."
+          </div>
+        </div>
+        <div
+          class="col-md-12 heading col-xs-12"
+          style="text-align: center; margin-top: 50px; padding-bottom: 10px;"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <b class="heading-border col-xs-12" style="font-size: 50px;"
+            >Our Partners</b
+          >
+        </div>
+        <div class="apollo-clients col-xs-12 row text-center margin-top-20">
+          <!--<divclass="">
+        <div class=" margin-top-50">
+
+    <div class="text-center ">
+        <div class="clients-bg">
+            &lt;!&ndash;<img src="images/man.png" alt="man" style="width: 100px; padding: 30px 10px 10px 10px;">&ndash;&gt;
+            </div >
+    </div>
+
+    <div class="text-center ">
+        <div class="clients-bg">
+            &lt;!&ndash;<img src="images/man.png" alt="man" style="width: 100px; padding: 30px 10px 10px 10px;">&ndash;&gt;
+            </div>
+            </div>
+
+            <div class="text-center">
+            <div class="clients-bg">
+                &lt;!&ndash;<img src="images/man.png" alt="man"style=" width: 100px; padding: 30px 10px 10px 10px;">&ndash;&gt;
+    </div>
+    </div>
+
+    <div class="text-center">
+            <div class="clients-bg">
+                &lt;!&ndash;<img src="images/man.png" alt="man" style="width: 100px; padding: 30px 10px 10px 10px;">&ndash;&gt;
+    </div>
+        </div>
+    </div>
+    </div>-->
+
+          <!--<div class="apollo-clients sample-text-3col-md-10 col-md-offset-1 " style="padding-bottom: 5%; z-index: 50;">
+                    <div class="text-center client material-box-shadow" data-aos="fade-up" data-aos-duration="1000" style="background-color: #109a9f; padding: 20px; border-radius: 100px;width: 20%; height: 20%;">
+
+            </div>
+
+                    <div class="text-center client material-box-shadow" data-aos="fade-up" data-aos-duration="1000" style="background-color: #109a9f; padding: 20px; border-radius: 100px; width: 20%; height: 20%;">
+
+                    </div>
+
+                    <div class="text-center client material-box-shadow" data-aos="fade-up" data-aos-duration="1000" style="background-color: #109a9f; padding: 20px; border-radius: 100px; width: 20%; height: 20%;">
+
+                    </div>
+                </div>-->
+
+          <div
+            class="col-md-10 col-xs-12 col-md-offset-1 text-center client-row"
+            style="margin-top: 50px;"
+          >
+            <div class="col-md-6 col-xs-12">
+              <img
+                style="width: 55% !important;"
+                src="images/clients/subicbay.png"
+                alt="client"
+                class="client"
+              />
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <img
+                style="width: 60% !important;"
+                src="images/clients/STAR_logo.png"
+                alt="client"
+                class="client"
+                style="border-radius: 5px;"
+              />
+            </div>
+          </div>
+
+          <div
+            class="col-md-10 col-xs-12 col-md-offset-1 text-center client-row"
+            style="margin-top: 50px;"
+          >
+            <div class="col-md-4 col-xs-12">
+              <img
+                src="images/clients/pilmico.png"
+                alt="client"
+                class="client"
+              />
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <img
+                src="images/clients/unahco.png"
+                alt="client"
+                class="client"
+              />
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <img
+                src="images/clients/cargill.png"
+                alt="client"
+                class="client"
+              />
+            </div>
+          </div>
+
+          <div
+            class="col-md-10 col-xs-12 col-md-offset-1 text-center client-row"
+            style="
+              margin-top: 50px;
+              align-items: center;
+              display: flex;
+              flex-wrap: wrap;
+            "
+          >
+            <div class="col-md-4 col-xs-12">
+              <img
+                style="width: 55% !important;"
+                src="images/clients/ekoneklogonew.png"
+                alt="client"
+                class="client"
+              />
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <img
+                style="width: 130px !important; height: 130px !important;"
+                src="images/clients/mega.png"
+                alt="client"
+                class="client"
+              />
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <img src="images/clients/ppfc.png" alt="client" class="client" />
+            </div>
+          </div>
+
+          <div
+            class="col-md-10 col-xs-12 col-md-offset-1 text-center client-row"
+            style="margin-top: 50px;"
+          >
+            <div class="col-md-4 col-xs-12">
+              <img
+                style="width: 184.74px !important; height: 130px !important;"
+                src="images/clients/muscle-shack.png"
+                alt="client"
+                class="client"
+              />
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <img
+                style="width: 196.07px !important; height: 130px !important;"
+                src="images/clients/bhf.png"
+                alt="client"
+                class="client"
+              />
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <img
+                style="width: 201.84px !important; height: 130px !important;"
+                src="images/clients/bps.png"
+                alt="client"
+                class="client"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--container-->
+    </div>
+
+    <div class="bottom-section row" style="margin-top: 5%;">
+      <!--<div id="myCarousel" class="carousel slide row" data-ride="carousel">
+        &lt;!&ndash;Indicators&ndash;&gt;
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        &lt;!&ndash;Wrapper for slides&ndash;&gt;
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="text-center col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+                    <div class="row">
+                        <img src="images/man%20(1).png" alt="man" style="width: 100px;">
+                    </div>
+                    <div class="row col-md-10 col-md-offset-1 margin-top-20 ">
+                        <h4 class="" style="color: #fff; font-weight: normal;">
+                            "Apollo System is the best thing that ever happened in my business.
+                            It was the best decision I ever made. On top of it all, their president is so gwapo!
+                            Amazing system, amazing people, amazing chino!"
+                        </h4>
+                    </div>
+
+                    <div class="row col-md-10 col-md-offset-1 margin-top-20">
+                        <h4 class="" style="color: #fff; font-weight: bold;">
+                            Antonio Pereira, Head of Logistics Operation, ABC Company
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="text-center col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+                    <div class="row">
+                        <img src="images/man%20(1).png" alt="man" style="width: 100px;">
+                    </div>
+                    <div class="row col-md-10 col-md-offset-1 margin-top-20">
+                        <h4 class="" style="color: #fff; font-weight: normal;">
+                            "Apollo System is the best thing that ever happened in my business.
+                            It was the best decision I ever made. On top of it all, their president is so gwapo!
+                            Amazing system, amazing people, amazing chino!"
+                        </h4>
+                    </div>
+
+                    <div class="row col-md-10 col-md-offset-1 margin-top-20">
+                        <h4 class="" style="color: #fff; font-weight: bold;">
+                            Antonio Pereira, Head of Logistics Operation, ABC Company
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="text-center col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+                    <div class="row">
+                        <img src="images/man%20(1).png" alt="man" style="width: 100px;">
+                    </div>
+                    <div class="row col-md-10 col-md-offset-1 margin-top-20">
+                        <h4 class="" style="color: #fff; font-weight: normal;">
+                            "Apollo System is the best thing that ever happened in my business.
+                            It was the best decision I ever made. On top of it all, their president is so gwapo!
+                            Amazing system, amazing people, amazing chino!"
+                        </h4>
+                    </div>
+
+                    <div class="row col-md-10 col-md-offset-1 margin-top-20">
+                        <h4 class="" style="color: #fff; font-weight: bold;">
+                            Antonio Pereira, Head of Logistics Operation, ABC Company
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        &lt;!&ndash;Left and right controls&ndash;&gt;
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>-->
+      <!--carousel-->
+
+      <!--apollo-clients-->
+      <div class="apollo-footer row col-md-12 clearfix">
+        <div class="row top-footer">
+          <div class="col-md-6 col-xs-12 footer-logo">
+            <a href="index.html"
+              ><img src="images/logo.png" alt="logo" style="width: 50px;" />
+              AESi</a
+            >
+          </div>
+          <div class="col-md-6 col-xs-12 footer-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aesi.html">Why AESi</a></li>
+              <li><a href="our-solutions.html">Our Solutions</a></li>
+              <li><a href="company.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="news-and-updates.html">News and Updates</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <br />
+
+        <div class="text-center">
+          <div
+            class="row bottom-footer"
+            style="width: 100%; position: absolute; bottom: 0px; margin: auto;"
+          >
+            <div class="col-xs-12">
+              <p class="text-center pull-left pull-gt-sm col-xs-12">
+                &copy; 2018 Accur8 Enterprise Solutions Inc.
+              </p>
+              <p
+                class="text-center pull-right pull-gt-sm col-xs-12"
+                style="font-size: 11px; color: rgba(255, 255, 255, 0.8);"
+              >
+                a member of &nbsp;
+                <img
+                  src="images/SSG Logo-02.png"
+                  width="20"
+                  style="padding-bottom: 3px;"
+                />
+                S.T.A.R. Services Group
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog modal-sm">
+
+		&lt;!&ndash; Modal content&ndash;&gt;
+		<div class="modal-content">
+			<div class="modal-body text-center">
+				<h3>Solutions</h3>
+				<div class="">
+					<h4 class="margin-top-30">Logistics Automation</h4>
+					<a href="warehousing.html">Warehousing</a>
+					<a href="terminal.html">Terminal</a>
+				</div>
+				<div class="">
+					<h4 class="margin-top-20">Enterprise Resource Planning</h4>
+					<a href="warehousing.html">Something Here</a>
+					<a href="warehousing.html">Something Here</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+-->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/floating-menu.js"></script>
+    <script src="js/apollo.js"></script>
+    <script src="js/jquery.drawsvg.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/debug.addIndicators.min.js"></script>
+
+    <script>
+      (function () {
+        var words = [
+            "port",
+            "terminal",
+            "warehouse",
+            "inventory",
+            "cargo",
+            "logistics",
+            "accounting",
+            "payroll",
+            "people",
+            "BUSINESS",
+          ],
+          i = 0;
+        setInterval(function () {
+          $("#changingword").fadeOut(function () {
+            $(this)
+              .html(words[(i = (i + 1) % words.length)])
+              .fadeIn();
+          });
+        }, 3000);
+      })();
+
+      $(document).ready(function () {
+        var controller = new ScrollMagic.Controller();
+
+        var scene1 = new ScrollMagic.Scene({ triggerElement: ".apollo-vector" })
+          .setClassToggle(".circle", "animation-scale")
+          //            .addIndicators({ name: '1 - add a class' })
+          .addTo(controller);
+
+        var scene2 = new ScrollMagic.Scene({ triggerElement: ".apollo-vector" })
+          .setClassToggle(".icon", "animation-stroke")
+          //            .addIndicators({ name: '1 - add a class' })
+          .addTo(controller);
+
+        $(window).scroll(function () {});
+      });
+    </script>
+  </body>
+</html>

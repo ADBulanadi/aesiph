@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Our Solutions | AESi</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">-->
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/proxima-nova.css">
+    <link rel="stylesheet" href="Gotham/Gotham.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/floating-menu.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!--<link rel="stylesheet" href="css/system-vector.css">-->
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: #dfdfdf;
+    }
+
+    nav li a {
+        color: #fff;
+    }
+
+    nav li a:hover {
+        background: transparent !important;
+        color: #fff;
+        box-shadow: none;
+    }
+
+    nav li a:focus {
+        background: transparent !important;
+        color: #fff;
+    }
+
+    nav li a .active {
+        color: #109a9f;
+    }
+
+    .navbar-header a:hover {
+        color: #fff;
+    }
+
+    @media (max-width: 768px) {
+        .apollo-solution-bg {
+            padding: 0 !important;
+            height: 300px !important;
+        }
+
+        .apollo-solution {
+            background-image: none !important;
+        }
+
+        .apollo-solution b {
+            color: #109a9f !important;
+            padding-bottom: 0 !important;
+        }
+
+        .apollo-solution h4 {
+            margin-top: 0 !important;
+        }
+
+        .something-here b {
+            font-size: 45px;
+        }
+    }
+
+    @media (min-width: 770px) {
+        .line {
+            margin-left: -10px;
+        }
+    }
+
+    .sample-text {
+        padding: 50px;
+        /*background: linear-gradient(to bottom right, #109A9F, #18DAA5);*/
+        background: url('images/glare.jpg') bottom center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        /*background-attachment: fixed;*/
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 100vh !important;
+    }
+
+    .sample-text:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, rgb(0, 150, 136), rgba(20, 96, 89, 0.3));
+        opacity: .8;
+    }
+
+    text {
+        font-family: 'Gotham';
+        font-weight: normal;
+    }
+
+    .solution-container-r {
+        margin: 80px 0 0 0;
+        padding: 20px;
+        border-radius: 10px 0 0 10px;
+        float: right;
+        background-color: #fff;
+    }
+
+    .solution-container-l {
+        background-color: #109a9f;
+        color: #fff !important;
+        margin: 80px 0 0 0;
+        padding: 20px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    @media (max-width: 991px) {
+        .solution-container-l,
+        .solution-container-r {
+            margin: 0 !important;
+        }
+    }
+
+    .solution ul li::before {
+        content: "\2022";
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -25px;
+    }
+
+    .solution ul {
+        list-style: none;
+    }
+
+    .solution-container-l ul li::before {
+        color: #fff;
+    }
+
+    .solution-container-r ul li::before {
+        color: #109a9f;
+    }
+
+    .solution ul {
+        padding-left: 20px;
+    }
+
+    .solution ul li {
+        padding: 10px;
+    }
+
+    .solution-img {
+        width: 80%;
+        /*margin: -60px auto 5px auto;*/
+    }
+
+    .col2-ul-md {
+        columns: 1;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .solution-img {
+            width: 50%;
+        }
+
+        .col2-ul-md {
+            columns: 2;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .cut-rad {
+            border-radius: 0;
+            box-shadow: none !important;
+            padding: 10px !important;;
+        }
+
+        .cut-rad:first-child {
+            float:none;
+        }
+
+        .cut-rad div.heading {
+            text-align: center !important;
+            margin-bottom: 30px;
+        }
+
+        .cut-rad div.heading b {
+            font-size: 25px !important;
+        }
+    }
+
+    .padding-resp {
+        padding-bottom:300px;
+    }
+
+    @media (max-width:767px) {
+        .padding-resp {
+            padding-bottom:0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .pull-gt-sm {
+            float: none !important;
+        }
+
+        .m4per-sm {
+            margin-left: 4%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .apollo-footer .bottom-footer {
+            margin-top: 10px;
+            width:60%;
+        }
+
+        .apollo-footer .bottom-footer p {
+            white-space: nowrap;
+        }
+
+        .apollo-footer .bottom-footer p img {
+            width:15px;
+        }
+
+        .footer-resp {
+            padding-bottom: 450px !important;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .apollo-footer .bottom-footer p.pull-right {
+            padding-right: 0 !important;
+        }
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .container {
+            padding-bottom: 0 !important;
+        }
+    }
+</style>
+
+<body>
+
+<div class="btTop" title="Back to Top">
+    <i class="fa fa-arrow-up"></i>
+</div>
+
+<div class="open">
+    <span class="cls"></span>
+    <span>
+		<ul class="sub-menu ">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="aesi.html">Why AESi</a>
+			</li>
+			<li>
+				<a style="font-weight: 600;" href="our-solutions.html">Our Solutions</a>
+			</li>
+			<li>
+				<a href="company.html">About Us</a>
+			</li>
+            <!--<li>
+                <a href="pricing.html">Pricing</a>
+            </li>-->
+			<li>
+				<a href="contact.html">Contact Us</a>
+			</li>
+            <li><a href="careers.html">Careers</a></li>
+		</ul>
+	</span>
+    <span class="cls"></span>
+</div>
+
+<nav class="navbar">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" style="white-space:nowrap"><img src="images/logo.png" alt="logo" id="logo"> AESi</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aesi.html">Why AESi</a></li>
+                    <li><a href="our-solutions.html" id="" class="active-nav">Our Solutions</a></li>
+                    <li><a href="company.html">About Us</a></li>
+                    <!--<li><a href="pricing.html">Pricing</a></li>-->
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+</nav>
+
+<div class="floating-sidenav text-center">
+    <!--<a href="javascript:void(0)" id="closeBtn">&times;</a>-->
+    <ul class="navigation">
+        <li style="color: #109A9F; font-weight: bold; font-size: 20px;"><p>Our Solutions</p></li>
+        <li><span class="fa fa-home" style="font-size: 18px; padding-right: 3px;"></span> <a href="#1"
+                                                                                             class="apollo-active">Warehouse</a>
+        </li>
+        <li><span class="fa fa-ship pr-5"></span> <a href="#2">Port</a></li>
+        <li><span class="fa fa-book pr-5"></span> <a href="#3">Books</a></li>
+        <li><span class="fa fa-users pr-5"></span> <a href="#4">People</a></li>
+    </ul>
+</div>
+
+<div class="col-xs-12 text-right">
+    <!--<span id="openNav">&#9776;</span>-->
+    <div id="wrapper" style="position: fixed;">
+        <div class="main-item menu-floating">
+            <!--<span class="line line01"></span>
+            <span class="line line02"></span>
+            <span class="line line03"></span>-->
+            <span class="fa fa-arrow-left"></span>
+        </div>
+    </div>
+</div>
+
+<div class="padding-resp" style="position:relative;margin-top:-16px;">
+    <div class="container">
+        <div class="sample-text h100vh col-md-12" style="display:flex;align-items:center;">
+            <div class="col-md-12 col-xs-12 col-sm-12" style="display:flex;flex-direction:column;">
+                <p class="text-center" style="font-size:50px;color:#fff;">
+                    Our Solutions
+                </p> <br>
+                <!--<h4 class="color-white col-md-8 col-md-offset-2 text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h4>-->
+            </div>
+        </div>
+
+        <div class="clearfix p-0 page-section">
+            <div class="col-md-11 form-container-box-darker solution solution-container-r cut-rad"
+                 data-aos="fade-left" data-aos-duration="1000" id="1">
+                <div class="col-md-12 mt-20 p-0">
+
+                    <div class="col-md-6 col-xs-12 p-0" data-aos="fade-left" data-aos-duration="1000"
+                         style="text-align: center">
+                        <img src="images/solutions/03-warehouse.png" alt="Warehouse Management System"
+                             class="solution-img">
+                    </div>
+
+                    <div class="col-md-6 col-xs-12 clearfix p-0 solution-text" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="col-md-12 heading" style="padding: 20px 10px" data-aos="fade-left"
+                             data-aos-duration="1000">
+                            <b style="font-size: 30px;">Warehouse Management System</b>
+                        </div>
+
+                        <p class="col-md-12 p-0 os-description">
+                            The AESi Warehouse Management System improves the way you operate your warehouse - From
+                            tracking the movement of goods up to delivering them to your clients.
+                        </p>
+
+                        <div class="col-md-12 p-0">
+                            <ul class="col2-ul-md">
+                                <li>Receiving Management</li>
+                                <li>Cargo Withdrawal</li>
+                                <li>Truck Queueing</li>
+                                <li>Resource Planning</li>
+                                <li>Inventory Tracking</li>
+                                <li>Consignment Management</li>
+                                <li>Intelligent Reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="clearfix p-0 page-section">
+            <div class="col-md-11 form-container-box-darker solution solution-container-l cut-rad"
+                 data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" id="2">
+
+                <div class="col-md-12 mt-20 p-0">
+
+                    <div class="col-md-6 col-xs-12 pull-right p-0" data-aos="fade-right" data-aos-duration="1000"
+                         style="text-align:center">
+                        <img src="images/solutions/03-port.png" alt="Port Management System"
+                             class="solution-img">
+                    </div>
+
+                    <div class="col-md-6 col-xs-12 p-0 solution-text" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="col-md-12 heading" style="text-align: left; padding: 20px 10px;" data-aos="fade-right"
+                             data-aos-duration="1000">
+                            <b class="color-white" style="font-size: 30px; color: #FFEB3B !important;">Port Management System</b>
+                        </div>
+
+                        <p class="col-md-12 p-0 os-description">
+                            The AESi Port Management System is fully customizable software solution that helps in
+                            managing the administration and operation in Ports, Terminals, and Port Authorities.
+                        </p>
+
+                        <div class="col-md-12 p-0">
+                            <ul class="col2-ul-md">
+                                <li>Visit Management</li>
+                                <li>Vessel Movement</li>
+                                <li>Resource Planning</li>
+                                <li>Berth Management</li>
+                                <li>Electronic Manifest</li>
+                                <li>Meeting Scheduler</li>
+                                <li>Document Management</li>
+                                <li>AIS / VTS Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="clearfix p-0 page-section">
+            <div class="col-md-11 form-container-box-darker solution solution-container-r cut-rad"
+                 data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" id="3">
+
+                <div class="col-md-12 mt-20 p-0">
+
+                    <div class="col-md-6 col-xs-12 p-0" data-aos="fade-left" data-aos-duration="1000"
+                         style="text-align:center">
+                        <img src="images/solutions/03-Books.png" alt="Books"
+                             class="solution-img">
+                    </div>
+
+                    <div class="col-md-6 p-0 solution-text" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="col-md-12 heading" style="padding: 20px 10px" data-aos="fade-left"
+                             data-aos-duration="1000">
+                            <b style="font-size: 30px;">Books</b>
+                        </div>
+
+                        <p class="col-md-12 p-0 os-description">
+                            AESi Books is an accounting software solution for small to medium-sized business to manage
+                            most financially-related
+                            business processes - from Entering of Sales, Tracking of Expenses, Preparing Invoices,
+                            Purchase Order Processing, Inventory
+                            Management, up to generation of financial statement reports. We can also customize the process
+                            and workflow according to your
+                            business rules.
+                        </p>
+
+                        <div class="col-md-12 col-xs-12 p-0">
+                            <ul class="col2-ul-md">
+                                <li>Operations Management</li>
+                                <li>Financial Management</li>
+                                <li>Customer Vendor Management</li>
+                                <li>Sales and Expense Tracking</li>
+                                <li>Intelligent Reporting</li>
+                                <li>BIR Compliant VAT Management</li>
+                                <li>Customizable Dashboard</li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="clearfix p-0 page-section">
+            <div class="col-md-11 form-container-box-darker solution solution-container-l cut-rad"
+                 data-aos="fade-right" data-aos-delay="350" data-aos-duration="1000" id="4">
+
+                <div class="col-md-12 mt-20 p-0">
+
+                    <div class="col-md-6 col-xs-12 pull-right p-0" data-aos="fade-right" data-aos-duration="1000"
+                         style="text-align:center">
+                        <img src="images/solutions/03-People.png" alt="People"
+                             class="solution-img">
+                    </div>
+
+                    <div class="col-md-6 col-xs-12 p-0 solution-text" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="col-md-12 heading" style="text-align: left; padding: 20px 10px;" data-aos="fade-right"
+                             data-aos-duration="1000">
+                            <b class="color-white" style="font-size: 30px; color: #FFEB3B !important;">People</b>
+                        </div>
+
+                        <p class="col-md-12 p-0 os-description">
+                            AESi People is a Human Resource Information System Software Solution. It lets you manage
+                            people
+                            and spend less time on paperwork.
+                        </p>
+
+                        <div class="col-md-12 p-0">
+                            <ul class="col2-ul-md">
+                                <li>Employee Database</li>
+                                <li>Payroll Management</li>
+                                <li>Benefits and Loan Management</li>
+                                <li>Organizational Chart Management</li>
+                                <li>Shift Schedule Management</li>
+                                <li>Time and Attendance Tracking</li>
+                                <li>Company and Government Reports</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="bottom-section row" style="margin-top: 5%;">
+    <div class="apollo-footer row col-md-12 clearfix">
+        <div class="col-md-12 top-footer">
+            <div class="col-md-6 col-xs-12 footer-logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo" style="width: 50px;"> AESi</a>
+            </div>
+            <div class="col-md-6 col-xs-12 footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aesi.html">Why AESi</a></li>
+                    <li><a href="our-solutions.html">Our Solutions</a></li>
+                    <li><a href="company.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="news-and-updates.html">News and Updates</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div><br>
+
+        <div class="text-center">
+            <div class="row bottom-footer"
+                 style="width:100%;position:absolute;bottom:0px;margin:auto;">
+                <div class="col-xs-12">
+                    <p class="text-center pull-left pull-gt-sm">
+                        © 2018 Accur8 Enterprise Solutions Inc.</p>
+                    <p class="text-center pull-right pull-gt-sm" style="font-size: 11px; color: rgba(255, 255, 255, 0.8);">a member of &nbsp;
+                        <img src="images/SSG Logo-02.png" width="20" style="padding-bottom:3px;">
+                        S.T.A.R. Services Group</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog modal-sm">
+
+		&lt;!&ndash; Modal content&ndash;&gt;
+		<div class="modal-content">
+			<div class="modal-body text-center">
+				<h3>Solutions</h3>
+				<div class="">
+					<h4 class="margin-top-30">Logistics Automation</h4>
+					<a href="warehousing.html">Warehousing</a>
+					<a href="terminal.html">Terminal</a>
+				</div>
+				<div class="">
+					<h4 class="margin-top-20">Enterprise Resource Planning</h4>
+					<a href="warehousing.html">Something Here</a>
+					<a href="warehousing.html">Something Here</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+-->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/floating-menu.js"></script>
+<script src="js/apollo.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.floating-sidenav').toggleClass("toggle-floating-sidenav");
+        $(".menu-floating").toggleClass("close");
+
+        $("#wrapper").click(function () {
+            $(".menu-floating").toggleClass("close");
+        });
+
+        $("#wrapper").click(function () {
+                $('.floating-sidenav').toggleClass("toggle-floating-sidenav");
+                $('.line').css("color", "#fff");
+                    /*$('.navbar-brand').toggleClass("display-none");*/
+                $('.openNav').toggleClass("background-transparent");
+            }
+        );
+
+        $('a[href*=#]').bind('click', function (e) {
+            e.preventDefault(); // prevent hard jump, the default behavior
+
+            var target = $(this).attr("href"); // Set the target as variable
+
+            // perform animated scrolling by getting top-position of target-element and set it as scroll target
+            $('html, body').stop().animate({
+                scrollTop: $(target).offset().top
+            }, 600, function () {
+                location.hash = target; //attach the hash (#jumptarget) to the pageurl
+            });
+
+            return false;
+        });
+    });
+
+    $(window).scroll(function () {
+        var scrollDistance = $(window).scrollTop();
+
+        $('.page-section').each(function (i) {
+            if ($(this).position().top <= scrollDistance) {
+                $('.floating-sidenav a.apollo-active').removeClass('apollo-active');
+                $('.floating-sidenav a').eq(i).addClass('apollo-active');
+            }
+        });
+    }).scroll();
+
+    $(document).ready(function () {
+        $('a[href*=#]').bind('click', function (e) {
+            e.preventDefault(); // prevent hard jump, the default behavior
+
+            var target = $(this).attr("href"); // Set the target as variable
+
+            // perform animated scrolling by getting top-position of target-element and set it as scroll target
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000, function () {
+                location.hash = target; //attach the hash (#jumptarget) to the pageurl
+            });
+
+            return false;
+        });
+    });
+</script>
+
+</body>
+</html>

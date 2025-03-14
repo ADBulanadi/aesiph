@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Why AESi? | AESi</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="images/logo.png">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/proxima-nova.css">
+    <link rel="stylesheet" href="Gotham/Gotham.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/floating-menu.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<style>
+    nav {
+        background-color: #fff;
+    }
+
+    nav li a {
+        color: #fff;
+        /*font-weight: bold;*/
+    }
+
+    nav li a:hover {
+        background: transparent !important;
+        color: #fff;
+        box-shadow: none;
+    }
+
+    nav li a:focus {
+        background: transparent !important;
+        color: #fff;
+    }
+
+    .navbar-header a {
+        color: #555;
+    }
+
+    .navbar-header a:hover {
+        color: #555;
+    }
+
+    .content .side-menu ul li {
+        padding: 10px;
+        display: inline-block;
+    }
+
+    .content .side-menu ul li span {
+        color: #109A9F;
+        font-size: 20px;
+    }
+
+    .content .side-menu ul li a {
+        text-decoration: none;
+        color: #555;
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+
+    .content .side-menu ul li a:hover {
+        border-bottom: 3px #109A9F solid;
+    }
+
+    .why-apollo-header {
+        background-color: #08100f;
+        height: 100vh !important;
+        background-size: cover;
+        /*background-attachment: fixed;*/
+        /*padding-top: 80px;*/
+    }
+
+    .why-apollo-header .heading b {
+        color: #fff;
+    }
+
+    .why-apollo-pic {
+        height: 100vh;
+        /*/background-attachment: fixed;*/
+        background-size: cover;
+        background-image: url("images/why-apollo-pic.jpg");
+    }
+
+    .apollo-systems {
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url("images/apollo-systems-bg-6.png");
+    }
+
+    .apollo-div-image {
+        /*height: 100%;*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url("images/apollo-systems-bg-6.png");
+    }
+
+    .apollo-div {
+        height: 100vh;
+        background-color: #f3f3f3;
+        padding: 8%;
+        /*background-size: cover;*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: left;*/
+        /*background-image: url("images/svg/circle-bg.svg");*/
+    }
+
+    @media (max-width: 767px ) {
+        .apollo-systems {
+            height: 150px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #apollo-gif {
+            width: 100%;
+        }
+
+        .inner-content .heading b {
+            font-size: 50px;
+        }
+
+        #our-brand img {
+            margin-top: 50px !important;
+        }
+    }
+
+    @media (min-width: 770px) {
+        #wrapper .main-item .line {
+            margin-left: -20px;
+        }
+
+        #wrapper {
+            right: 20%;
+        }
+    }
+
+    .apollo-tooltip {
+        /*visibility: hidden;*/
+        background-color: #333;
+        color: #fff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border-radius: 5px;
+        padding: 50px;
+        /*width: 100%;*/
+        transition: 0.5s;
+        z-index: 99;
+    }
+
+    .apollo-tooltip:after {
+        /*content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 100%;
+        top: 47%;
+        border-left: 5px solid transparent;
+        border-right: 20px solid #109a9f;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;*/
+    }
+
+    @media (min-width: 1200px) and (max-height: 1080px) {
+        .why-apollo-header {
+            height: 870px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .product-sm {
+            margin-top: 0 !important;
+        }
+    }
+
+    .neg51px-md {
+        margin-top: -51px;
+    }
+
+    @media (min-width: 992px) {
+        .neg51px-md {
+            margin-top: 0 !important;
+        }
+    }
+
+    .card-deck {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .card {
+        margin: auto;
+        -webkit-transition: all 350ms ease;
+        transition: all 350ms ease;
+        width: 30%;
+        min-height: 380px;
+
+        border-radius: 15px;
+    }
+
+    .card.c-mb-20 {
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: 576px) {
+        .card-deck {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            margin-right: -15px;
+            margin-left: -15px
+        }
+    }
+
+    @media (max-width: 767px) {
+        .card {
+            width: 100%;
+            min-height: auto;
+            padding: 30px;
+        }
+
+        .cut-rad {
+            border-radius: 0 !important;
+            box-shadow: none !important;
+        }
+
+        .mt-gt-xs {
+            margin-top: 50px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .bottom-footer div p {
+            float: none !important;
+            padding: 0;
+        }
+    }
+
+    .whyapollo-header {
+        padding-bottom: 25px;
+        padding-top: 3%;
+    }
+
+    @media (max-width: 768px) {
+        .whyapollo-header {
+            padding-top: 20%;
+        }
+
+        .whyapollo-header b {
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .whyapollo-header {
+            padding-top: 48%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .pull-gt-sm {
+            float: none !important;
+        }
+
+        .m4per-sm {
+            margin-left: 4%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .apollo-footer .bottom-footer {
+            margin-top: 10px;
+            width: 60%;
+        }
+
+        .apollo-footer .bottom-footer p {
+            white-space: nowrap;
+        }
+
+        .apollo-footer .bottom-footer p img {
+            width: 15px;
+        }
+
+        .footer-resp {
+            padding-bottom: 400px !important;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .apollo-footer .bottom-footer p.pull-right {
+            padding-right: 0 !important;
+        }
+    }
+</style>
+
+<body>
+
+<div class="btTop" title="Back to Top">
+    <i class="fa fa-arrow-up"></i>
+</div>
+<!--<header class="header">
+    <div class="burger">
+        <div class="burger__patty"></div>
+        <div class="burger__patty"></div>
+        <div class="burger__patty"></div>
+    </div>
+
+    <div class="menu">
+        <div class="menu__brand">
+            <img src="images/logo.png" class="logo" alt="logo">
+        </div>
+        <ul class="menu__list">
+            <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Why Apollo</a></li>
+            <li class="menu__item"><a href="index.html" class="menu__link">Solutions</a></li>
+            <li class="menu__item"><a href="company.html" class="menu__link">About Us</a></li>
+            <li class="menu__item"><a href="pricing.html" class="menu__link">Pricing</a></li>
+            <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+        </ul>
+    </div>
+</header>-->
+
+<div class="open">
+    <span class="cls"></span>
+    <span>
+		<ul class="sub-menu ">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a style="font-weight: 600;" href="aesi.html">Why Apollo</a>
+			</li>
+			<li>
+				<a href="our-solutions.html">Our Solutions</a>
+			</li>
+			<li>
+				<a href="company.html">About Us</a>
+			</li>
+            <!--<li>
+                <a href="pricing.html">Pricing</a>
+            </li>-->
+			<li>
+				<a href="contact.html">Contact Us</a>
+			</li>
+            <li><a href="careers.html">Careers</a></li>
+		</ul>
+	</span>
+    <span class="cls"></span>
+</div>
+
+<!--<div class="sidenav text-center">
+    &lt;!&ndash;<a href="javascript:void(0)" id="closeBtn">&times;</a>&ndash;&gt;
+    <a href="index.html" style="padding-bottom: 20px;">&lt;!&ndash;<img src="images/logo.png" alt="logo" style="width: 30px">&ndash;&gt;<span style="letter-spacing: 3px; font-weight: bold; font-size: 20px;"> APOLLO</span></a>
+    <a href="index.html"><span class="fa fa-home"></span> Home</a>
+    <a href="aesi.html"><span class="fa fa-question-circle"></span> Why Apollo</a>
+    <a href="index.html"><span class="fa fa-lightbulb-o"></span> Solutions</a>
+    <a href="company.html"><span class="fa fa-info-circle"></span> About Us</a>
+    <a href="#"><span class="fa fa-credit-card-alt"></span> Pricing</a>
+    <a href="index.html"><span class="fa fa-envelope"></span> Contact</a>
+</div>-->
+
+<div class="row padding-right-0 padding-left-0 footer-resp" style="padding-bottom: 350px; position: relative;">
+    <div class="why-apollo-header">
+        <!-- <div class="openNav col-xs-12 padding-0">
+             <div class="col-xs-10 text-left">
+                 <div class="navbar-header">
+                     <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" id="">  APOLLO</a>
+                 </div>
+             </div>
+
+             <div class="col-xs-2 text-right">
+                 &lt;!&ndash;<span id="openNav">&#9776;</span>&ndash;&gt;
+                 <div id="wrapper">
+                     <div class="main-item menu">
+                         <span class="line line01"></span>
+                         <span class="line line02"></span>
+                         <span class="line line03"></span>
+                     </div>
+                 </div>
+             </div>
+         </div>-->
+
+        <div class="col-md-10 col-md-offset-1 col-xs-12 margin-top-20" data-aos="fade-up" data-aos-duration="1000">
+            <div class="heading col-md-10 col-md-offset-1 col-xs-12 text-center whyapollo-header">
+                <img src="images/Why Apollo.png" alt="Why Apollo?" id="whyApollo" width="100%">
+                <b data-aos="fade-up" data-aos-duration="1000">Why AESi?</b>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" style="white-space:nowrap"><img src="images/logo.png"
+                                                                                              alt="logo" id="logo">
+                        AESi</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aesi.html" class="active-nav">Why AESi</a></li>
+                        <li><a href="our-solutions.html">Our Solutions</a></li>
+                        <li><a href="company.html">About Us</a></li>
+                        <!--<li><a href="pricing.html">Pricing</a></li>-->
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+    </nav>
+
+    <!--<div class="col-md-12" style="margin-top:-41px;padding-right:0">
+        <div class="heading col-md-12 text-center"
+             style="background-color: #f1f1f1; display: flex; align-items: center; padding-bottom:0">
+            <div class="col-md-2 col-md-offset-5 padding-top-30"
+                 data-aos="fade-up" data-aos-duration="1000" style="margin:auto;">
+                <img src="images/svg/idea.svg" alt="Why Apollo" class="core-mgmt-icon"><br>
+            </div>
+        </div>
+        <div class="heading col-md-12 text-center"
+             style="background-color: #f1f1f1; display: flex; align-items: center; padding-top: 20px;">
+            <div class=" col-md-8 col-md-offset-2 padding-bottom-30"
+                 data-aos="fade-down" data-aos-duration="1000" style="color: #333;">
+                <h4 class="heading-h4">
+                    Our core management and technical teams have in-depth knowledge of the port and logistics
+                    industries. We know how things work in a port, backed by years of experience in port management and being  one of the port operators in Subic Bay.<br><br>
+                    We offer custom-made solutions which will fit into the business process.
+                </h4>
+            </div>
+        </div>
+    </div>-->
+
+    <!--<div class="col-md-12 h100vh apollo-systems"-->
+    <!--style="padding: 50px 50px 50px 50px; display: flex; position: relative;">-->
+    <!--<div class="col-md-6 col-xs-12 p-20" style="display: flex; align-items: center; flex-direction: column;"-->
+    <!--data-aos="zoom-in" data-aos-duration="1000">-->
+    <!--&lt;!&ndash;<div class="col-md-12 form-container-box-darker h100per"-->
+    <!--style="background-color: #fff; width: 500px; border-radius: 50%; display: flex; align-items: center; padding: 30px;">-->
+    <!--<img class="col-md-12" src="images/logo.png" alt="logo" width="350">-->
+    <!--</div>&ndash;&gt;-->
+    <!--</div>-->
+
+    <!--<div class="col-md-6 col-xs-12" style="display: flex; align-items: center;">-->
+    <!--<div class="col-md-12 brad-5" style="position: relative; padding: 50px;">-->
+    <!--<div class="col-md-12 heading p-0" style="" data-aos="fade-up" data-aos-duration="1000">-->
+    <!--<b class="" style="font-size: 40px; color: #CDDC39; font-weight: bold;"><span style="color: #009688;">Apollo</span> <br><span style="color: #888;">Automation-->
+    <!--Systems</span></b>-->
+    <!--</div>-->
+
+    <!--<div class="col-md-12 mt-30 p-0" style="color: #555; font-size: 16px; text-align: justify;"-->
+    <!--data-aos="fade-up" data-aos-duration="1000">-->
+    <!--is an Enterprise Resource Planning Suite in the Philippines designed to automate the supply chain-->
+    <!--management and logistics of Port, Transportation, Warehouse and Queueing operations of trucks and-->
+    <!--equipment.-->
+    <!--We believe that the Philippines has a lot of room to grow. Being an archipelago, we want to maximize-->
+    <!--our ports as our gateway to economic growth.-->
+    <!--We created Apollo to revolutionize the way logistics operations are managed, and help drive solid-->
+    <!--results.-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div class="clearfix apollo-div">
+       <!-- <div class="col-sm-6 col-xs-12 apollo-systems p-0"></div>
+        <div class="col-sm-6 col-xs-12 text-center"
+             style="display: flex; align-items: center; padding: 20px; margin-top:30px;">
+            <div class="padding-bottom-30"
+                 style="text-align:left;padding:40px;border-radius:10px;color:#333;">
+                <div class="col-md-12 heading p-0 aas-title" style="" data-aos="fade-up" data-aos-duration="1000">
+                    <b class="" style="font-size: 40px; color: #CDDC39; font-weight: bold;"><span
+                            style="color: #009688;">Apollo</span><br><span style="color: #888;">Automation
+                        Systems</span></b>
+                </div>
+
+                <div class="col-md-12 mt-30 p-0 aas-description"
+                     style="color: #555; font-size: 16px; text-align: justify;"
+                     data-aos="fade-down" data-aos-duration="1000">
+                    is an Enterprise Resource Planning Suite in the Philippines designed to automate the supply chain
+                    management and logistics of Port, Transportation, Warehouse and Queueing operations of trucks and
+                    equipment.
+                    We believe that the Philippines has a lot of room to grow. Being an archipelago, we want to maximize
+                    our ports as our gateway to economic growth.
+                    We created Apollo to revolutionize the way logistics operations are managed, and help drive solid
+                    results.
+                </div>
+            </div>
+        </div>-->
+
+        <div class="col-md-6 col-xs-12 apollo-div-description" style="background: #272727; height: 100%; color: #fff; display: flex; align-items: center;">
+            <div class="col-md-12">
+                <p class="col-md-12 apollo-div-title" style="font-size: 28px; font-weight: 600; padding-bottom: 15px;">
+                    <span style="color: #109a9f;">AESi</span> <br> Automation Solutions
+                </p>
+
+                <p class="apollo-div-text" style="font-size: 13px; padding: 0 20px;">
+                    is an <span style="color: #109a9f;">Enterprise Resource Planning Suite</span> in the Philippines designed to automate the supply chain management and logistics of <span style="color: #109a9f;">Port, Transportation, Warehouse</span> and <span style="color: #109a9f;">Queueing</span> operations of trucks and equipment. <br><br>
+
+                    As a fully flexible and configurable ERP, it is built around the need for business intelligence, giving you accurate insights you need to be able to focus on your core operational strategies. <br><br>
+
+                    We believe that the Philippines has a lot of room to grow. Being an archipelago, we want to maximize our ports as our gateway to economic growth. We created AESi Automation Solutions to revolutionize the way logistics operations are managed, and help drive solid results.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-xs-12 apollo-div-image">
+
+        </div>
+    </div>
+
+    <div class="clearfix col-md-10 col-md-offset-1 col-xs-12 built-apollo-2">
+        <div class="col-md-12 col-xs-12">
+            <div class="col-md-12 text-center" data-aos="fade-down" data-aos-duration="2000">
+                <p class="heading-border" style="font-size: 40px; color: #109a9f; margin-bottom: 50px;">We built AESi to be</p>
+            </div>
+
+            <div class="col-md-4 col-xs-12 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-md-12 mt-20" style="">
+                    <img src="images/svg/devices.svg" alt="devices"
+                         style="width: 65px; margin-bottom: -10px;">
+                </div>
+
+                <div class="col-md-12 mt-20">
+                    <p class="title" for="" style="">User Experience-Centric</p>
+                </div>
+
+                <div class="col-md-12">
+                    <p class="margin-top-10" style="color: #555">We’ve spent a lot of time making
+                        AESi very intuitive and easy to use. Whether you’re on a PC, Mac, or a mobile device,
+                        you
+                        can fully utilize AESi, even with minimal to no training at all.</p>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-md-12 margin-top-20" style="">
+                    <img src="images/svg/thought.svg" alt="thought" style="width: 55px;">
+                </div>
+                <div class="col-md-12 mt-20">
+                    <p class="title" for="" style="">Accurate Business Intelligence</p>
+                </div>
+                <div class="col-md-12">
+                    <p class="margin-top-10" style="color: #555;">Our dashboards and reporting tools
+                        present data like you’ve never seen before. AESi provides actionable information to
+                        help you focus on developing strategies and concentrate on decision making.</p>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-md-12 mt-20" style="">
+                    <img src="images/svg/security.svg" alt="security"
+                         style="width: 55px;">
+                </div>
+                <div class="col-md-12 mt-20">
+                    <p class="title" for="">Quality and Reliability</p>
+                </div>
+                <div class="col-md-12">
+                    <p class="margin-top-10" style="color: #555">Behind AESi is a team of industry
+                        veterans, subject matter experts, business analysts, and senior developers. We ensure
+                        that
+                        our systems perform as intended because we want you to get a robust and reliable
+                        solution
+                        that works.</p>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-md-12 mt-20" style="height:25%">
+                    <img src="images/svg/laptop-config.svg" alt="laptop-config"
+                         style="width: 55px; margin-top: 20px;">
+                </div>
+                <div class="col-md-12 mt-20">
+                    <p class="title" for="" style="">Flexibility and Configurability</p>
+                </div>
+                <div class="col-md-12">
+                    <p class="margin-top-10" style="color: #555;">We design, build and configure to your
+                        specific business requirements, which is why AESi can always adapt to your operations.
+                        Tell us what you need and we'll tailor-fit our systems for your operations.</p>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-md-12 mt-20" style="height:25%">
+                    <img src="images/svg/innovation.svg" alt="innovation"
+                         style="width: 55px; margin-top: 20px;">
+                </div>
+                <div class="col-md-12 mt-20">
+                    <p class="title" for="" style="">Continuous Innovations</p>
+                </div>
+                <div class="col-md-12">
+                    <p class="margin-top-10" style="color: #555">We understand that the business
+                        landscape continuously change due to the demands of the market and fast-paced
+                        technological
+                        advancement, and we commit that we will be your partner in bringing these advancements
+                        and
+                        solutions through our system improvements and upgrades.</p>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-md-12 mt-20" style="height:25%">
+                    <img src="images/svg/headphones.svg" alt="headphones"
+                         style="width: 55px; margin-top: 20px;">
+                </div>
+                <div class="col-md-12 mt-20">
+                    <p class="title" for="" style="">Excellent Support</p>
+                </div>
+                <div class="col-md-12">
+                    <p class="margin-top-10" style="color: #555;">AESi is backed by our dedication to
+                        customer satisfaction. We’ll work with you every step of the way so that you get the
+                        most
+                        out of our systems.</p>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<div class="content col-md-12  padding-left-0 padding-right-0">
+        &lt;!&ndash;<div class="col-md-12 side-menu margin-top-10 text-center">
+            <ul style="list-style-type: none;">
+                <li>&lt;!&ndash;<span class="fa fa-ship"></span>&nbsp;&ndash;&gt;<a href="#apollo" class="apollo-active">Apollo</a></li>
+                <li>&lt;!&ndash;<span class="fa fa-home"></span>&nbsp;&ndash;&gt;<a href="#our-brand">Our Brand</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1 text-center margin-top-100" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="col-md-100">
+                <img src="images/apollo-systems.gif" alt="apollo-systems" id="apollo-gif">
+            </div>
+        </div>&ndash;&gt;
+
+        <div class="col-md-10 col-md-offset-1 inner-content margin-top-50 padding-left-0 padding-right-0">
+
+            &lt;!&ndash;<div class="col-md-12 h100vh" style="">&ndash;&gt;
+            &lt;!&ndash;<div class="col-md-12 text-center heading">&ndash;&gt;
+            &lt;!&ndash;<b class="heading-border" style="font-size: 40px;">Apollo Automation Systems</b>&ndash;&gt;
+            &lt;!&ndash;</div>&ndash;&gt;
+
+            &lt;!&ndash;<div class="col-md-12 apollo-automation-systems padding-right-0 padding-left-0">&ndash;&gt;
+            &lt;!&ndash;<div class="col-md-6" data-aos="zoom-in col-xs-12" data-aos-duration="1000">&ndash;&gt;
+            &lt;!&ndash;<img src="images/apollo-automation-systems.png" alt="apollo-automation-systems"
+             id="apollo-automation-png" style="width: 500px; margin-top: 10%">&ndash;&gt;
+            &lt;!&ndash;</div>&ndash;&gt;
+
+            &lt;!&ndash;<div class="col-md-6 text-center apollo-automation-systems about-apollo-2 apollo-tooltip" data-aos="fade-up" data-aos-duration="1000" style="margin-top: 50px;"> &lt;!&ndash;style="background-color: rgba(16, 154, 159, 0.54); padding: 25px; border-radius: 500px; width: 510px; height: 490px;">&ndash;&gt;&ndash;&gt;
+            &lt;!&ndash;<div class="col-md-12 col-xs-12 product" data-aos-duration="1000"> &lt;!&ndash;style="background-color: rgba(16, 154, 159, 0.54); border-radius: 500px; width: 510px; height: 490px;">&ndash;&gt;&ndash;&gt;
+            &lt;!&ndash;&lt;!&ndash;<div class="title-30 col-md-12" style="color: #109a9f; margin-top: 10%" data-aos="fade-up;"><b>Apollo Automation<br>Systems</b></div>&ndash;&gt;&ndash;&gt;
+            &lt;!&ndash;<h5 class="heading-h4 col-md-12 col-xs-12" style="color: #fff;">&ndash;&gt;
+            &lt;!&ndash;is an Enterprise Resource Planning Suite in the Philippines designed to automate the supply chain management and logistics of Port, Transportation, Warehouse and Queueing operations of trucks and equipment. <br><br>&ndash;&gt;
+
+            &lt;!&ndash;As a fully flexible and configurable ERP, it is built around the need for business
+        intelligence, giving you accurate insights you need to be able to focus on your core
+        operational strategies. <br><br>&ndash;&gt;
+
+            &lt;!&ndash;We believe that the Philippines has a lot of room to grow. Being an archipelago, we want to
+        maximize our ports as our gateway to economic growth. We created Apollo to revolutionize the
+        way logistics operations are managed, and help drive solid results.&ndash;&gt;
+            &lt;!&ndash;</h5>&ndash;&gt;
+            &lt;!&ndash;</div>&ndash;&gt;
+            &lt;!&ndash;</div>&ndash;&gt;
+            &lt;!&ndash;&lt;!&ndash;<div class="apollo-tablet-bg col-xs-12">&ndash;&gt;
+            &lt;!&ndash;<div class="apollo-tablet col-md-12">&ndash;&gt;
+            &lt;!&ndash;&lt;!&ndash;<div class="title-30 col-md-12" style="color: #fff; margin-top: 10%" data-aos="fade-up;"><b>Apollo Automation<br>Systems</b></div>&ndash;&gt;&ndash;&gt;
+            &lt;!&ndash;<p class="col-md-10 col-md-offset-1 col-xs-12 text-justify" data-aos="zoom-in" data-aos-duration="1000" style="color: #fff; margin-top: 22%">&ndash;&gt;
+            &lt;!&ndash;is an <b>Enterprise Resource Planning Suite</b> in the Philippines designed to automate the supply chain management and logistics of <b>Port, Transportation, Warehouse</b> and <b>Queueing</b> operations of trucks and equipment. <br><br>&ndash;&gt;
+
+            &lt;!&ndash;As a fully flexible and configurable ERP, it is built around the need for business intelligence, giving you accurate insights you need to be able to focus on your core operational strategies. <br><br>&ndash;&gt;
+
+            &lt;!&ndash;We believe that the Philippines has a lot of room to grow. Being an archipelago, we want to maximize our ports as our gateway to economic growth. We created Apollo to revolutionize the way logistics operations are managed, and help drive solid results.&ndash;&gt;
+            &lt;!&ndash;</p>&ndash;&gt;
+            &lt;!&ndash;</div>&ndash;&gt;
+            &lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;
+            &lt;!&ndash;</div>&ndash;&gt;
+            &lt;!&ndash;</div>&ndash;&gt;
+
+
+            &lt;!&ndash;<div class="col-md-6 col-md-offset-1 margin-top-50" data-aos="fade-up" data-aos-duration="1000">
+                <div class="title-30 text-center">
+                    Apollo Automation Systems
+                </div>
+                <h5 class="heading-h5 text-justify margin-top-20">
+                    is an Enterprise Resource Planning Suite in the Philippines designed to automate the supply chain management and logistics of Port, Transportation, Warehouse and Queueing operations of trucks and equipment. <br><br>
+
+                    As a fully flexible and configurable ERP, it is built around the need for business intelligence, giving you accurate insights you need to be able to focus on your core operational strategies. <br><br>
+
+                    We believe that the Philippines has a lot of room to grow. Being an archipelago, we want to maximize our ports as our gateway to economic growth. We created Apollo to revolutionize the way logistics operations are managed, and help drive solid results.
+                </h5>
+            </div>&ndash;&gt;
+        </div>
+
+    </div>-->
+
+    <!--<div class="clearfix">
+        <div class="col-md-12 col-xs-12 built-apollo">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-6">
+                    <h1 class="col-md-12">
+                        User Experience-Centric
+                    </h1>
+                    <p>
+                        We’ve spent a lot of time making Apollo very intuitive and easy to use.
+                        Whether you’re on a PC, Mac, or a mobile device, you can fully utilize Apollo,
+                        even with minimal to no training at all.
+                    </p>
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!--<div class="clearfix neg51px-md" style="background-color:#f1f1f1;">
+        <div class="col-md-12" data-aos="fade-up" data-aos-duration="1000" style="text-align:center;">
+            <div class="text-center built-apollo"
+                 style="">
+                <b style="font-size: 40px;">
+                    We built Apollo to be</b>
+            </div>
+        </div>
+
+        &lt;!&ndash;
+        <div class="col-md-10 col-md-offset-1 margin-top-50 apollo-built" style="">
+            <div class="col-md-12">
+
+                <div class="col-md-4 m-10" style="" data-aos="fade-right"
+                     data-aos-duration="1000">
+                    <div class="clearfix col-md-12 text-center form-container-box-darker brad-10"
+                         style="height: 380px; background-color: #fff;">
+                        <div class="col-md-12 mt-20">
+                            <img src="images/svg/devices.svg" alt="devices"
+                                 style="width: 80px; margin-bottom: -10px;">
+                        </div>
+                        <div class="col-md-12 margin-top-10">
+                            <p for="" style="color: #555; font-size: 25px;">User Experience-Centric</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="margin-top-10" style="color: #555">We’ve spent a lot of time making
+                                Apollo very intuitive and easy to use. Whether you’re on a PC, Mac, or a mobile device,
+                                you
+                                can fully utilize Apollo, even with minimal to no training at all.</p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 m-10" style="" data-aos="fade-down"
+                     data-aos-duration="1000">
+                    <div class="clearfix col-md-12 text-center form-container-box-darker brad-10"
+                         style="height: 380px; background-color: #109A9F;">
+                        <div class="col-md-12 margin-top-20">
+                            <img src="images/svg/thought.svg" alt="thought" style="width: 75px;">
+                        </div>
+                        <div class="col-md-12 margin-top-10">
+                            <p for="" style="color: #fff; font-size: 25px;">Accurate Business Intelligence</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="margin-top-10" style="color: #fff">Our dashboards and reporting tools
+                                present data like you’ve never seen before. Apollo provides actionable information to
+                                help you focus on developing strategies and concentrate on decision making.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 m-10" style=""
+                     data-aos="fade-left" data-aos-duration="1000">
+                    <div class="clearfix col-md-12 text-center form-container-box-darker brad-10"
+                         style="height: 380px; background-color: #fff;">
+                        <div class="col-md-12">
+                            <img src="images/svg/shield.svg" alt="shield"
+                                 style="width: 80px; margin-top: 20px;">
+                        </div>
+                        <div class="col-md-12 margin-top-10">
+                            <p for="" style="color: #555; font-size: 25px;">Quality and Reliability</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="margin-top-10" style="color: #555">Behind Apollo is a team of industry
+                                veterans, subject matter experts, business analysts, and senior developers. We ensure
+                                that
+                                our systems perform as intended because we want you to get a robust and reliable
+                                solution
+                                that works.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12" style="margin-top: 40px;">
+                <div class="col-md-4 m-10" style="" data-aos="fade-right"
+                     data-aos-duration="1000">
+                    <div class="clearfix col-md-12 text-center form-container-box-darker brad-10"
+                         style="height: 380px; background-color: #109A9F;">
+                        <div class="col-md-12 margin-top-10">
+                            <img src="images/svg/laptop-config.svg" alt="laptop-config"
+                                 style="width: 75px; margin-top: 20px;">
+                        </div>
+                        <div class="col-md-12 margin-top-10">
+                            <p for="" style="color: #fff; font-size: 25px;">Flexibility and Configurability</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="margin-top-10" style="color: #fff">We design, build and configure to your
+                                specific business requirements, which is why Apollo can always adapt to your operations.
+                                Tell us what you need and we'll tailor-fit our systems for your operations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 m-10" style="" data-aos="fade-up"
+                     data-aos-duration="1000">
+                    <div class="clearfix col-md-12 text-center form-container-box-darker brad-10"
+                         style="height: 380px; background-color: #fff;">
+                        <div class="col-md-12 margin-top-10">
+                            <img src="images/svg/innovation.svg" alt="innovation"
+                                 style="width: 65px; margin-top: 10px;">
+                        </div>
+                        <div class="col-md-12 margin-top-10">
+                            <p for="" style="color: #555; font-size: 25px;">Continuous Innovations</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="margin-top-10" style="color: #555">We understand that the business
+                                landscape continuously change due to the demands of the market and fast-paced
+                                technological
+                                advancement, and we commit that we will be your partner in bringing these advancements
+                                and
+                                solutions through our system improvements and upgrades.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 m-10" style=""
+                     data-aos="fade-left" data-aos-duration="1000">
+                    <div class="clearfix col-md-12 text-center form-container-box-darker brad-10"
+                         style="height: 380px; background-color: #109A9F;">
+                        <div class="col-md-12 margin-top-10">
+                            <img src="images/svg/communication.svg" alt="communication"
+                                 style="width: 75px; margin-top: 20px;">
+                        </div>
+                        <div class="col-md-12 margin-top-10">
+                            <p for="" style="color: #fff; font-size: 25px;">Excellent<br>Support</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="margin-top-10" style="color: #fff">Apollo is backed by our dedication to
+                                customer satisfaction. We’ll work with you every step of the way so that you get the
+                                most
+                                out of our systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        &ndash;&gt;
+
+        <div class="col-md-10 col-md-offset-1 clearfix card-deck-container" style="margin-bottom: 50px;">
+            <div class="margin-top-50 card-deck">
+
+                <div class="card c-mb-20 text-center form-container-box-darker cut-rad" data-aos="fade-up-left"
+                     data-aos-duration="1000">
+                    <div class="col-md-12 mt-20" style="height:25%">
+                        <img src="images/svg/devices.svg" alt="devices"
+                             style="width: 80px; margin-bottom: -10px;">
+                    </div>
+                    <div class="col-md-12 margin-top-10">
+                        <p for="" style="color: #555; font-size: 25px;">User Experience-Centric</p>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="margin-top-10" style="color: #555">We’ve spent a lot of time making
+                            Apollo very intuitive and easy to use. Whether you’re on a PC, Mac, or a mobile device,
+                            you
+                            can fully utilize Apollo, even with minimal to no training at all.</p>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="card c-mb-20 text-center form-container-box-darker cut-rad" style="background-color:#109a9f"
+                     data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-md-12 margin-top-20" style="height:25%">
+                        <img src="images/svg/thought.svg" alt="thought" style="width: 75px;">
+                    </div>
+                    <div class="col-md-12 margin-top-10">
+                        <p for="" style="color: #fff; font-size: 25px;">Accurate Business Intelligence</p>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="margin-top-10" style="color: #fff">Our dashboards and reporting tools
+                            present data like you’ve never seen before. Apollo provides actionable information to
+                            help you focus on developing strategies and concentrate on decision making.</p>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="card c-mb-20 text-center form-container-box-darker cut-rad" data-aos="fade-up-right"
+                     data-aos-duration="1000">
+                    <div class="col-md-12" style="height:25%">
+                        <img src="images/svg/shield.svg" alt="shield"
+                             style="width: 80px; margin-top: 20px;">
+                    </div>
+                    <div class="col-md-12 margin-top-10">
+                        <p for="" style="color: #555; font-size: 25px;">Quality and Reliability</p>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="margin-top-10" style="color: #555">Behind Apollo is a team of industry
+                            veterans, subject matter experts, business analysts, and senior developers. We ensure
+                            that
+                            our systems perform as intended because we want you to get a robust and reliable
+                            solution
+                            that works.</p>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="card text-center form-container-box-darker cut-rad" style="background-color:#109a9f"
+                     data-aos="fade-down-left" data-aos-duration="1000">
+                    <div class="col-md-12 margin-top-10" style="height:25%">
+                        <img src="images/svg/laptop-config.svg" alt="laptop-config"
+                             style="width: 75px; margin-top: 20px;">
+                    </div>
+                    <div class="col-md-12 margin-top-10">
+                        <p for="" style="color: #fff; font-size: 25px;">Flexibility and Configurability</p>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="margin-top-10" style="color: #fff">We design, build and configure to your
+                            specific business requirements, which is why Apollo can always adapt to your operations.
+                            Tell us what you need and we'll tailor-fit our systems for your operations.</p>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="card text-center form-container-box-darker cut-rad" data-aos="fade-down"
+                     data-aos-duration="1000">
+                    <div class="col-md-12 margin-top-10" style="height:25%">
+                        <img src="images/svg/innovation.svg" alt="innovation"
+                             style="width: 75px; margin-top: 20px;">
+                    </div>
+                    <div class="col-md-12 margin-top-10">
+                        <p for="" style="color: #555; font-size: 25px;">Continuous Innovations</p>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="margin-top-10" style="color: #555">We understand that the business
+                            landscape continuously change due to the demands of the market and fast-paced
+                            technological
+                            advancement, and we commit that we will be your partner in bringing these advancements
+                            and
+                            solutions through our system improvements and upgrades.</p>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="card text-center form-container-box-darker cut-rad" style="background-color:#109a9f"
+                     data-aos="fade-down-right" data-aos-duration="1000">
+                    <div class="col-md-12 margin-top-10" style="height:25%">
+                        <img src="images/svg/communication.svg" alt="communication"
+                             style="width: 75px; margin-top: 20px;">
+                    </div>
+                    <div class="col-md-12 margin-top-10">
+                        <p for="" style="color: #fff; font-size: 25px;">Excellent<br>Support</p>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="margin-top-10" style="color: #fff">Apollo is backed by our dedication to
+                            customer satisfaction. We’ll work with you every step of the way so that you get the
+                            most
+                            out of our systems.</p>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>-->
+
+    <img src="images/why-apollo-pic.jpg" alt="why" style="width: 100%;">
+
+    <div class="apollo-footer row col-md-12 clearfix">
+        <div class="col-md-12 top-footer">
+            <div class="col-md-6 col-xs-12 footer-logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo" style="width: 50px;"> AESi</a>
+            </div>
+            <div class="col-md-6 col-xs-12 footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aesi.html">Why AESi</a></li>
+                    <li><a href="our-solutions.html">Our Solutions</a></li>
+                    <li><a href="company.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="news-and-updates.html">News and Updates</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br>
+
+        <div class="text-center m4per-sm">
+            <div class="row bottom-footer"
+                 style="width:94%;position:absolute;bottom:0px;margin:auto;">
+                <div class="col-xs-12">
+                    <p class="text-center pull-left pull-gt-sm">
+                        © 2018 Accur8 Enterprise Solutions Inc.</p>
+                    <p class="text-center pull-right pull-gt-sm" style="font-size: 11px; color: rgba(255, 255, 255, 0.8);">a member of &nbsp;
+                        <img src="images/SSG Logo-02.png" width="20" style="padding-bottom:3px;">
+                        S.T.A.R. Services Group</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <h3>Solutions</h3>
+                <div class="">
+                    <h4 class="margin-top-30">Logistics Automation</h4>
+                    <a href="warehousing.html">Warehousing</a>
+                    <a href="terminal.html">Terminal</a>
+                </div>
+                <div class="">
+                    <h4 class="margin-top-20">Enterprise Resource Planning</h4>
+                    <a href="warehousing.html">Something Here</a>
+                    <a href="warehousing.html">Something Here</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/floating-menu.js"></script>
+<script src="js/apollo.js"></script>
+
+</body>
+</html>

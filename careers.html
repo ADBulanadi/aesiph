@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Careers | AESi</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">-->
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/proxima-nova.css">
+    <link rel="stylesheet" href="Gotham/Gotham.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/floating-menu.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!--<link rel="stylesheet" href="css/system-vector.css">-->
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: #fff;
+    }
+
+    nav li a {
+        color: #fff;
+    }
+
+    nav li a:hover {
+        background: transparent !important;
+        color: #fff;
+        box-shadow: none;
+    }
+
+    nav li a:focus {
+        background: transparent !important;
+        color: #fff;
+    }
+
+    nav li a .active {
+        color: #109a9f;
+    }
+
+    .navbar-header a:hover {
+        color: #fff;
+    }
+
+    @media (max-width: 768px) {
+        .apollo-solution-bg {
+            padding: 0 !important;
+            height: 300px !important;
+        }
+
+        .apollo-solution {
+            background-image: none !important;
+        }
+
+        .apollo-solution b {
+            color: #109a9f !important;
+            padding-bottom: 0 !important;
+        }
+
+        .apollo-solution h4 {
+            margin-top: 0 !important;
+        }
+
+        .something-here b {
+            font-size: 45px;
+        }
+    }
+
+    @media (min-width: 770px) {
+        .line {
+            margin-left: -10px;
+        }
+    }
+
+    .sample-text {
+        padding: 50px;
+        /*background: linear-gradient(to bottom right, #109A9F, #18DAA5);*/
+        background: url('images/sean-pollock-PhYq704ffdA-unsplash.jpg') bottom center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        /*background-attachment: fixed;*/
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 100vh !important;
+    }
+
+    .sample-text:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, rgb(0, 150, 136), rgba(20, 96, 89, 0.3));
+        opacity: .8;
+    }
+
+    text {
+        font-family: 'Gotham';
+        font-weight: normal;
+    }
+
+    .btn.page {
+        color: #fff;
+        background: #109a9f;
+        padding: 0 10px 0 10px;
+        border-radius: 25px;
+        text-decoration: none;
+    }
+
+    hr {
+        margin: 50px 0 50px 0;
+    }
+
+    @media (max-width: 768px) {
+        .pull-gt-sm {
+            float: none !important;
+        }
+
+        .m4per-sm {
+            margin-left: 4%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .apollo-footer .bottom-footer {
+            margin-top: 10px;
+            width: 60%;
+        }
+
+        .apollo-footer .bottom-footer p {
+            white-space: nowrap;
+        }
+
+        .apollo-footer .bottom-footer p img {
+            width: 15px;
+        }
+
+        .footer-resp {
+            padding-bottom: 450px !important;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .apollo-footer .bottom-footer p.pull-right {
+            padding-right: 0 !important;
+        }
+    }
+
+    .dept-card {
+        width: 33.33%
+    }
+
+    .dept-card div {
+        background: #7d7d7d;
+        width: 100%;
+        height: 200px;
+        border-radius: 25px;
+        border: 5px solid #109a9f;
+    }
+
+    .dept-card b {
+        width: 100%;
+        font-size: 16px;
+        background: #109a9f;
+        color: #fff;
+        padding: 5px 25px 5px 25px;
+        border-radius: 25px;
+        position: relative;
+        top: -12px;
+    }
+
+    @media (max-width: 767px) {
+        .dept-card {
+            width: 100% !important;
+        }
+    }
+
+    .open-positions {
+        padding: 50px;
+        background-image: url("images/our-solutions-3.1.png");
+        background-size: cover;
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 100vh;
+    }
+
+    .open-positions div div div div table tr td {
+        padding: 10px 0 10px 0;
+    }
+
+    .demo-button,
+    .demo-button:hover {
+        color: #fff !important;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        padding: 5px 10px 5px 10px;
+        text-decoration: none !important;
+    }
+
+    .demo-button.no-border,
+    .demo-button.no-border:hover {
+        color: #fff !important;
+        background: #ffffff33;
+        border: none;
+        border-radius: 25px;
+        padding: 3px 10px 7px;
+        backdrop-filter: blur(2px);
+        text-decoration: none !important;
+    }
+
+    .bottom-section {
+        padding-bottom: 282px;
+    }
+
+    @media (max-width: 320px) {
+        .bottom-section {
+            padding-bottom: 384px;
+        }
+    }
+
+    @media (max-width: 499px) and (min-width: 321px) {
+        .bottom-section {
+            padding-bottom: 376px;
+        }
+    }
+
+    @media (max-width: 768px) and (min-width: 500px) {
+        .bottom-section {
+            padding-bottom: 362px;
+        }
+    }
+
+    .linear-bg.solo {
+        height: 170px
+    }
+
+    @media (max-width: 320px) {
+        .linear-bg.solo {
+            height: 150px;
+            margin-bottom: -25% !important;
+        }
+    }
+
+    @media (max-width: 499px) and (min-width: 321px) {
+        .linear-bg.solo {
+            height: 120px;
+            margin-bottom: -14% !important;
+        }
+    }
+
+    @media (max-width: 768px) and (min-width: 500px) {
+        .linear-bg.solo {
+            height: 120px
+        }
+    }
+
+    @media (max-width: 900px) and (min-width: 769px) {
+        .linear-bg.solo {
+            height: 120px;
+            margin-bottom: -11% !important;
+        }
+    }
+</style>
+
+<body>
+    <div class="btTop" title="Back to Top">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+
+    <div class="open">
+        <span class="cls"></span>
+        <span>
+            <ul class="sub-menu ">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="aesi.html">Why AESi</a>
+                </li>
+                <li>
+                    <a href="#" class="products-scroll">Our Solutions</a>
+                </li>
+                <li>
+                    <a href="company.html">About Us</a>
+                </li>
+                <!--<li>
+                <a href="pricing.html">Pricing</a>
+            </li>-->
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+                <li><a href="careers.html" style="font-weight: 600;">Careers</a></li>
+            </ul>
+        </span>
+        <span class="cls"></span>
+    </div>
+
+    <nav class="navbar">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html" style="white-space:nowrap"><img src="images/logo.png"
+                            alt="logo" id="logo">
+                        AESi</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aesi.html">Why AESi</a></li>
+                        <li><a href="our-solutions.html" id="">Our Solutions</a></li>
+                        <li><a href="company.html">About Us</a></li>
+                        <!--<li><a href="pricing.html">Pricing</a></li>-->
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="careers.html" class="active-nav">Careers</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+    </nav>
+
+    <div style="/*padding-bottom: 350px;*/ position: relative; margin-top: -16px;">
+        <div class="container">
+            <div class="h100vh sample-text col-md-12 col-xs-12" style="display: flex; align-items: center;">
+                <div class="col-md-12 col-xs-12" style="display: flex; flex-direction: column;">
+                    <p class="text-center" style="font-size: 50px; color: #fff;">
+                        Careers
+                    </p> <br>
+                    <h3 class="heading-h4 color-fff text-center">
+                        Email us with your resume at<br><br>
+                        <a href="mailto:careers@aesiph.com" target="_blank"
+                            class="demo-button no-border">careers@aesiph.com</a>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-xs-12 linear-bg solo" style="margin-bottom:-11%;">
+                <div class="row heading" style="text-align:center;padding:25px 0 25px 0;color:#fff">
+                    <h4>No available openings for now.<br>Check back again soon!</h4>
+                </div>
+            </div>
+
+            <!--<div class="col-md-10 col-md-offset-1 col-xs-12 padding-top-50 padding-bottom-50 page-section">
+
+            <div class="row heading" style="text-align:center; margin: 50px 0 50px 0;padding:50px 0 50px 0;"
+                 data-aos="fade-up" data-aos-duration="1000">
+                <b class="heading-border" style="font-size: 50px;">Towards the moon and back</b>
+                <div class="padding-bottom-30"
+                     data-aos="fade-down" data-aos-duration="1000" style="color: #333;">
+                    <h4 class="heading-h4" style="margin:30px 0 30px 0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua.
+                    </h4>
+                    <a href="aesi.html" class="btn page">Why Apollo?</a>
+                </div>
+            </div>
+
+            <div class="row heading" style="text-align:center; margin: 50px 0 50px 0;padding:50px 0 50px 0;"
+                 data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-md-6">
+                    <b class="heading-border" style="font-size: 50px;">The Apollo Pad</b>
+                    <div class="padding-bottom-30"
+                         data-aos="fade-down" data-aos-duration="1000" style="color: #333;">
+                        <h4 class="heading-h5 flex-row">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="width:100%;height:250px;background-color:#7d7d7d"></div>
+                </div>
+            </div>
+
+            <div class="row heading" style="text-align:center; margin: 50px 0 50px 0;padding:50px 0 50px 0;"
+                 data-aos="fade-up" data-aos-duration="1000">
+                <b class="col-md-12 heading-border" style="font-size: 50px;">The all-star team!</b>
+                <div class="col-md-12"
+                     data-aos="fade-down" data-aos-duration="1000" style="color: #333;">
+                    <h4 class="heading-h4" style="margin:30px 0 30px 0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </h4>
+                </div>
+
+                <div class="row" style="color: #333;" data-aos="fade-up"
+                     data-aos-duration="1000">
+
+                    <div class="card-deck text-center">
+
+                        <div class="card dept-card col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="50"
+                             data-aos-duration="1000" style="margin:auto;">
+                            <div></div>
+                            <b>Department</b>
+                        </div>
+
+                        <div class="card dept-card col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="150"
+                             data-aos-duration="1000" style="margin:auto;">
+                            <div></div>
+                            <b>Department</b>
+                        </div>
+
+                        <div class="card dept-card col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="250"
+                             data-aos-duration="1000" style="margin:auto;">
+                            <div></div>
+                            <b>Department</b>
+                        </div>
+
+                        <div class="card dept-card col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="350"
+                             data-aos-duration="1000" style="margin:auto;">
+                            <div></div>
+                            <b>Department</b>
+                        </div>
+
+                        <div class="card dept-card col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="450"
+                             data-aos-duration="1000" style="margin:auto;">
+                            <div></div>
+                            <b>Department</b>
+                        </div>
+
+                        <div class="card dept-card col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="550"
+                             data-aos-duration="1000" style="margin:auto;">
+                            <div></div>
+                            <b>Department</b>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-xs-12 linear-bg" style="margin-top: 15%; margin-bottom: -10%">
+        </div>
+
+        <div class="col-md-12 col-xs-12 sample-text-2 text-center">
+            <div class="title-30 col-md-12" data-aos="fade-up" data-aos-duration="1000"
+                 style="padding-bottom:30px;">Nullam faucibus accumsan cursus.
+            </div>
+
+            <div class="sample-text-3 col-md-10 col-md-offset-1" style="padding-bottom:20px;z-index:0;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla erat, venenatis at erat sit amet,
+                posuere porttitor turpis. Vivamus ex eros, vulputate eu quam quis, fermentum tristique neque. Nullam
+                vitae iaculis quam, non blandit mauris. Nulla et erat sed nunc dictum ullamcorper ut ut est. Integer sit
+                amet tellus sagittis nulla maximus dignissim. Suspendisse nec arcu quis leo vestibulum bibendum.
+            </div>
+
+            <div class="sample-text-3 col-md-10 col-md-offset-1" style="padding-bottom:5%;z-index:0;">
+                <a href="aesi.html" class="btn page" style="border:1px solid #fff;color:#fff;">Frequently Asked
+                    Questions</a>
+            </div>
+
+        </div>
+
+        <div class="col-md-12 col-xs-12 linear-bg" style="">
+        </div>
+
+
+        <div class="col-md-10 col-md-offset-1 col-xs-12 padding-top-50 padding-bottom-50 page-section">
+            <div class="row heading" style="text-align:center; margin: 50px 0 50px 0;padding:50px 0 50px 0;"
+                 data-aos="fade-up" data-aos-duration="1000">
+                <b class="heading-border" style="font-size: 50px;">Got Questions?</b>
+                <div class="padding-bottom-30"
+                     data-aos="fade-down" data-aos-duration="1000" style="color: #333;">
+                    <h4 class="heading-h4" style="margin:30px 0 30px 0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </h4>
+                    <a href="aesi.html" class="btn page">Frequently Asked Questions</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="open-positions col-md-12 col-xs-12" style="margin-top: 70px;" id="openPositions">
+            <div class="col-md-12 heading col-xs-12" style="text-align: center; padding-bottom: 10px;"
+                 data-aos="fade-up" data-aos-duration="1000">
+                <b class="heading-border" style="font-size: 50px;">Open Positions</b>
+            </div>
+
+            <div class="col-md-10 col-md-offset-1 col-xs-12" style="margin-top: 50px;">
+                <div class="row">
+                    <div class="col-xs-12 product p-relative" data-aos="zoom-in" data-aos-duration="1000"
+                         style="height:285px;background-color:rgba(0, 0, 0, 0.7);padding: 20px 40px 20px 40px;border-radius:5px;">
+                        <div class="heading-h4 col-md-12">
+                            <table style="width:100%;color:#fff;font-size:15px;">
+                                <tr>
+                                    <td colspan="3" style="font-weight:500">Department</td>
+                                </tr>
+                                <tr>
+                                    <td style="width:10%"></td>
+                                    <td style="color:#109a9f;font-weight:500">Position</td>
+                                    <td>Location</td>
+                                </tr>
+                                <tr>
+                                    <td style="width:10%"></td>
+                                    <td style="color:#109a9f;font-weight:500">Position</td>
+                                    <td>Location</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="font-weight:500">Department</td>
+                                </tr>
+                                <tr>
+                                    <td style="width:10%"></td>
+                                    <td style="color:#109a9f;font-weight:500">Position</td>
+                                    <td>Location</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="col-md-10 col-md-offset-1 col-xs-12 padding-top-50 padding-bottom-50 page-section">
+
+            <div class="row heading" style="text-align:center; margin: 50px 0 50px 0;padding:50px 0 50px 0;"
+                 data-aos="fade-up" data-aos-duration="1000">
+                <div class="padding-bottom-30"
+                     data-aos="fade-down" data-aos-duration="1000" style="color: #333;">
+                    <h4 class="heading-h4" style="margin:30px 0 30px 0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </h4>
+                    <a href="aesi.html" class="btn page">Send Resume</a>
+                </div>
+            </div>
+
+        </div>-->
+
+        </div>
+    </div>
+
+    <div class="col-md-12 clearfix">
+        <img src="images/apollo-desktop.png" alt="Careers" style="width: 100%;">
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="bottom-section row" style="margin-top: 5%;">
+        <div class="apollo-footer row col-md-12 clearfix">
+            <div class="col-md-12 top-footer">
+                <div class="col-md-6 col-xs-12 footer-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo" style="width: 50px;"> AESi</a>
+                </div>
+                <div class="col-md-6 col-xs-12 footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aesi.html">Why AESi</a></li>
+                        <li><a href="our-solutions.html">Our Solutions</a></li>
+                        <li><a href="company.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="news-and-updates.html">News and Updates</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <br>
+
+            <div class="text-center">
+                <div class="row bottom-footer" style="width:100%;position:absolute;bottom:0px;margin:auto;">
+                    <div class="col-xs-12">
+                        <p class="text-center pull-left pull-gt-sm">
+                            © 2018 Accur8 Enterprise Solutions Inc.</p>
+                        <p class="text-center pull-right pull-gt-sm"
+                            style="font-size: 11px; color: rgba(255, 255, 255, 0.8);">a member of &nbsp;
+                            <img src="images/SSG Logo-02.png" width="20" style="padding-bottom:3px;">
+                            S.T.A.R. Services Group</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/floating-menu.js"></script>
+    <script src="js/apollo.js"></script>
+
+</body>
+
+</html>

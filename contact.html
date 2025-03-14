@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | AESi</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="images/logo.png">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/proxima-nova.css">
+    <link rel="stylesheet" href="Gotham/Gotham.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/floating-menu.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    nav {
+        background-color: #fff;
+    }
+
+    nav li a {
+        color: #fff;
+    }
+
+    nav li a:hover {
+        background: transparent !important;
+        color: #fff;
+        box-shadow: none;
+    }
+
+    nav li a:focus {
+        background: transparent !important;
+        color: #fff;
+    }
+
+    .navbar-header a {
+        color: #555;
+    }
+
+    .navbar-header a:hover {
+        color: #555;
+    }
+
+    .company-header {
+        background-image: url("images/header-contact-us.jpg");
+        height: 100vh !important;
+        background-size: cover;
+        /*background-attachment: fixed;*/
+    }
+
+    @media (max-width: 768px) {
+        .our-company-heading .heading b {
+            font-size: 50px;
+        }
+
+        .values {
+            text-align: justify !important;
+        }
+
+        .values b {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (min-width: 1200px) and (max-height: 1080px) {
+        .company-header {
+            height: 870px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .mb-gt-sm {
+            margin-bottom: 100px !important;
+        }
+    }
+
+    .demo-button,
+    .demo-button:hover {
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        padding: 5px 10px 5px 10px;
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+        .pull-gt-sm {
+            float: none !important;
+        }
+
+        .m4per-sm {
+            margin-left: 4%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .apollo-footer .bottom-footer {
+            margin-top: 10px;
+            width: 60%;
+        }
+
+        .apollo-footer .bottom-footer p {
+            white-space: nowrap;
+        }
+
+        .apollo-footer .bottom-footer p img {
+            width: 15px;
+        }
+
+        .footer-resp {
+            padding-bottom: 450px !important;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .apollo-footer .bottom-footer p.pull-right {
+            padding-right: 0 !important;
+        }
+    }
+
+    .spinner {
+        animation: rotate 2s linear infinite;
+        z-index: 2;
+        width: 30px;
+        height: 30px;
+    }
+
+    .spinner .path {
+        stroke: #ffffff33;
+        stroke-linecap: round;
+        animation: dash 1.5s ease-in-out infinite;
+    }
+
+    @keyframes rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes dash {
+        0% {
+            stroke-dasharray: 1, 150;
+            stroke-dashoffset: 0;
+        }
+        50% {
+            stroke-dasharray: 90, 150;
+            stroke-dashoffset: -35;
+        }
+        100% {
+            stroke-dasharray: 90, 150;
+            stroke-dashoffset: -124;
+        }
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .modal-error:before {
+        content: "";
+        display: none;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    .opened:before {
+        display: block;
+    }
+
+    .opened .modal-dialog {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        top: 20%;
+    }
+
+    .modal-dialog {
+        background: #fefefe;
+        border: #333333 solid 0px;
+        border-radius: 5px;
+        margin-left: -200px;
+        text-align: center;
+        position: fixed;
+        left: 50%;
+        top: -100%;
+        z-index: 11;
+        width: 360px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        -webkit-transform: translate(0, -500%);
+        -ms-transform: translate(0, -500%);
+        transform: translate(0, -500%);
+        -webkit-transition: -webkit-transform 0.3s ease-out;
+        -moz-transition: -moz-transform 0.3s ease-out;
+        -o-transition: -o-transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .modal-body input {
+        width: 200px;
+        padding: 8px;
+        border: 1px solid #ddd;
+        color: #888;
+        outline: 0;
+        font-size: 14px;
+        font-weight: bold
+    }
+
+    .modal-body h4 {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+    }
+
+    .modal-header,
+    .modal-footer {
+        padding: 10px 20px;
+    }
+
+    .modal-header {
+        border-bottom: #eeeeee solid 1px;
+    }
+
+    .modal-body svg{
+        width: 50%;
+        height: 100px;
+    }
+
+    .modal-body h2 {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+</style>
+
+<body>
+
+<div class="btTop" title="Back to Top">
+    <i class="fa fa-arrow-up"></i>
+</div>
+
+<div class="open">
+    <span class="cls"></span>
+    <span>
+            <ul class="sub-menu ">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="aesi.html">Why AESi</a>
+                </li>
+                <li>
+                    <a href="our-solutions.html">Our Solutions</a>
+                </li>
+                <li>
+                    <a href="company.html">About Us</a>
+                </li>
+                <!--<li>
+                    <a href="pricing.html">Pricing</a>
+                </li>-->
+                <li>
+                    <a style="font-weight: 600;" href="contact.html">Contact Us</a>
+                </li>
+                <li><a href="careers.html">Careers</a></li>
+            </ul>
+        </span>
+    <span class="cls"></span>
+</div>
+
+<!--<header class="header">
+    <div class="burger">
+        <div class="burger__patty"></div>
+        <div class="burger__patty"></div>
+        <div class="burger__patty"></div>
+    </div>
+
+    <div class="menu">
+        <div class="menu__brand">
+            <img src="images/logo.png" class="logo" alt="logo">
+        </div>
+        <ul class="menu__list">
+            <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+            <li class="menu__item"><a href="aesi.html" class="menu__link">Why Apollo</a></li>
+            <li class="menu__item"><a href="index.html" class="menu__link">Solutions</a></li>
+            <li class="menu__item"><a href="company.html" class="menu__link">About Us</a></li>
+            <li class="menu__item"><a href="pricing.html" class="menu__link">Pricing</a></li>
+            <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+        </ul>
+    </div>
+</header>-->
+
+<!--<div class="sidenav text-center">
+    &lt;!&ndash;<a href="javascript:void(0)" id="closeBtn">&times;</a>&ndash;&gt;
+    <a href="index.html">Home</a>
+    <a href="aesi.html">Apollo</a>
+    <a href="index.html">Products</a>
+    <a href="commitment.html">Commitment</a>
+    <a href="company.html">Our Company</a>
+    <a href="index.html">Contact</a>
+</div>-->
+
+<div class="row" style="padding-bottom: 350px; position: relative;">
+    <!--<div class="openNav col-md-12 col-xs-12 padding-0">
+        <div class="col-xs-10 text-left">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" id="">  APOLLO</a>
+            </div>
+        </div>
+
+        <div class="col-xs-2">
+            &lt;!&ndash;<span id="openNav">&#9776;</span>&ndash;&gt;
+            <div id="wrapper">
+                <div class="main-item menu">
+                    <span class="line line01"></span>
+                    <span class="line line02"></span>
+                    <span class="line line03"></span>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <nav class="navbar">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" style="white-space:nowrap"><img src="images/logo.png"
+                                                                                              alt="logo" id="logo">
+                        AESi</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aesi.html">Why AESi</a></li>
+                        <li><a href="our-solutions.html">Our Solutions</a></li>
+                        <li><a href="company.html">About Us</a></li>
+                        <!--<li><a href="pricing.html">Pricing</a></li>-->
+                        <li><a href="contact.html" class="active-nav">Contact Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+    </nav>
+
+
+    <div class="company-header">
+        <div class="col-md-10 col-md-offset-1 our-company-heading" data-aos="fade-up"
+             data-aos-duration="1000">
+            <div class="heading">
+                <p class="text-center" style="font-size:50px;color:#fff;margin-top:220px;">
+                    Talk to us!
+                </p> <br>
+                <!--<h4 class="heading-h4 color-fff text-center">
+                    <a href="#message" class="demo-button">Request for Demo</a>
+                </h4>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="content col-md-12 padding-right-0 padding-left-0">
+        <!--<div class="heading col-md-12 text-center" style="background-color: #f1f1f1;">
+            <b class="heading-border" style="font-size: 50px;" data-aos="fade-up" data-aos-duration="1000">Talk to us!</b>
+            <h4 class="heading-h4 col-md-6 col-md-offset-3 padding-bottom-30" data-aos="fade-up" data-aos-duration="1000">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </h4>
+        </div>-->
+
+        <div class="col-md-6 col-md-offset-3 text-center margin-top-50  " data-aos="zoom-in" data-aos-duration="1000">
+            <img src="images/talk-to-us.png" alt="talk-to-us" id="talk-to-us-img"
+                 style="width: 80%; border-radius: 1000px;">
+        </div>
+
+        <div class="col-md-10 col-md-offset-1 col-xs-12 margin-top-50 clearfix" style="padding-bottom: 50px;">
+            <div class="col-md-4 col-xs-12 margin-top-20" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-xs-4 contact-icon">
+                    <img src="images/apollo-location-outline.png" alt="location" style="width: 100%">
+                </div>
+                <div class="col-xs-8">
+                    <h4 style="color: #109a9f; font-weight: bold;">Addresses:</h4>
+                    <p style="color: #555"><span style="color:#109a9f;font-weight:700">HQ:</span><br>709 Globe Telecom
+                        Plaza 1 Pioneer St. Brgy Barangka Ilaya Mandaluyong City, Philippines 1552</p>
+                    <p style="color: #555"><span style="color:#109a9f;font-weight:700">Production:</span><br>717
+                        Cityland Shaw Tower St. Francis Corner Shaw Boulevard, Ortigas Center, Mandaluyong, Metro Manila
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12 margin-top-20" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-xs-4 contact-icon">
+                    <img src="images/apollo-mobile.png" alt="mobile" style="width: 100%">
+                </div>
+                <div class="col-xs-8">
+                    <h4 style="color: #109a9f; font-weight: bold;">Numbers:</h4>
+                    <p style="color: #555">(02) 8477 4127</p>
+                    <p style="color: #555">(63) 915 686 2762</p>
+                    <p style="color: #555">(63) 920 907 6704</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12 margin-top-20" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-xs-4 contact-icon text-center">
+                    <img src="images/svg/message.svg" alt="e-mail" style="margin:auto;width:85%">
+                </div>
+                <div class="col-xs-8">
+                    <h4 style="color: #109a9f; font-weight: bold;">E-mail:</h4>
+                    <p><a href="mailto:sales@apollosystem.ph"
+                          style="color:#555;text-decoration:none;">sales@aesiph.com</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="clearfix col-md-10 col-md-offset-1 col-xs-12 mb-gt-sm" style="margin-bottom: 50px;"
+             data-aos="fade-up" data-aos-duration="1500" id="message">
+            <hr>
+            <div class="text-center heading">
+                <b class="heading-border" style="color: #109a9f; font-weight: bold; font-size: 50px;">Email Us</b>
+            </div>
+            <div class="col-md-12 margin-top-30">
+                <div class="col-md-3 margin-top-20">
+                    <label for="contact-name" style="color: #555">Your Name*</label>
+                    <input type="text" class="text-input" name="name">
+                </div>
+
+                <div class="col-md-3 margin-top-20">
+                    <label for="contact-email" style="color: #555">Your Email*</label>
+                    <input type="email" class="text-input" name="email">
+                </div>
+
+                <div class="col-md-3 margin-top-20">
+                    <label for="contact-no" style="color: #555">Contact No*</label>
+                    <input type="text" class="text-input" name="contact-no">
+                </div>
+
+                <div class="col-md-3 margin-top-20">
+                    <label for="contact-subject" style="color: #555">Subject*</label>
+                    <input type="text" class="text-input" name="subject">
+                </div>
+
+                <div class="col-md-12 margin-top-20">
+                    <textarea rows="10" class="text-area" placeholder="Your Message*" name='message'></textarea>
+                </div>
+
+                <div class="col-md-12 text-right margin-top-20">
+                    <button class="apollo-button" id="send-mail">Send Message</button>
+                    <button class="apollo-button display-none" id="send-spinner">
+                        <svg class="spinner" viewBox="0 0 50 50">
+                            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="apollo-footer row col-md-12 clearfix">
+        <div class="col-md-12 top-footer">
+            <div class="col-md-6 col-xs-12 footer-logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo" style="width: 50px;"> AESi</a>
+            </div>
+            <div class="col-md-6 col-xs-12 footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aesi.html">Why AESi</a></li>
+                    <li><a href="our-solutions.html">Our Solutions</a></li>
+                    <li><a href="company.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="news-and-updates.html">News and Updates</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br>
+
+        <div class="text-center m4per-sm">
+            <div class="row bottom-footer"
+                 style="width:94%;position:absolute;bottom:0px;margin:auto;">
+                <div class="col-xs-12">
+                    <p class="text-center pull-left pull-gt-sm">
+                        © 2018 Accur8 Enterprise Solutions Inc.</p>
+                    <p class="text-center pull-right pull-gt-sm"
+                       style="font-size: 11px; color: rgba(255, 255, 255, 0.8);">a member of &nbsp;
+                        <img src="images/SSG Logo-02.png" width="20" style="padding-bottom:3px;">
+                        S.T.A.R. Services Group</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="clearfix"></div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <h3>Solutions</h3>
+                <div class="">
+                    <h4 class="margin-top-30">Logistics Automation</h4>
+                    <a href="warehousing.html">Warehousing</a>
+                    <a href="terminal.html">Terminal</a>
+                </div>
+                <div class="">
+                    <h4 class="margin-top-20">Enterprise Resource Planning</h4>
+                    <a href="warehousing.html">Something Here</a>
+                    <a href="warehousing.html">Something Here</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal-error" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <svg height="512" viewBox="0 0 58 58" width="512" xmlns="http://www.w3.org/2000/svg">
+                <g id="Page-1" fill="none" fill-rule="evenodd">
+                    <g id="055---message-error" fill-rule="nonzero">
+                        <path id="Shape"
+                              d="m51 17.91v-6.91c0-2.209139-1.790861-4-4-4h-8.55l-6.9-6c-1.4811489-1.21991279-3.6188511-1.21991279-5.1 0l-6.9 6h-8.55c-2.209139 0-4 1.790861-4 4v6.91l-7 6.09v30c0 2.209139 1.790861 4 4 4h50c2.209139 0 4-1.790861 4-4v-30z"
+                              fill="#f29c1f"/>
+                        <path id="Shape" d="m58 24v30c0 2.209139-1.790861 4-4 4h-.83l-18.13-15 15.96-13.21z"
+                              fill="#f0c419"/>
+                        <path id="Shape"
+                              d="m53.17 58h-48.34l18.13-15 3.49-2.89c1.4811489-1.2199128 3.6188511-1.2199128 5.1 0l3.49 2.89z"
+                              fill="#f3d55b"/>
+                        <path id="Shape" d="m22.96 43-18.13 15h-.83c-2.209139 0-4-1.790861-4-4v-30l7 5.79z"
+                              fill="#f0c419"/>
+                        <path id="Shape"
+                              d="m51 11v18.79l-15.96 13.21-3.49-2.89c-1.4811489-1.2199128-3.6188511-1.2199128-5.1 0l-3.49 2.89-15.96-13.21v-18.79c0-2.209139 1.790861-4 4-4h36c2.209139 0 4 1.790861 4 4z"
+                              fill="#f5efca"/>
+                        <path id="Shape"
+                              d="m40.192 13.244c-.6612528-.7620243-1.6112947-1.2124603-2.6197876-1.2420995s-1.9833484.3642248-2.6882124 1.0860995l-5.884 6.112-5.884-6.108c-.704864-.7218747-1.6797195-1.1157387-2.6882124-1.0860995s-1.9585348.4800752-2.6197876 1.2420995c-.5950936.6931962-.8808615 1.59958-.7909651 2.5087423.0898964.9091622.5476384 1.7420291 1.2669651 2.3052577l6.676 5.328-6.031 6.262c-.3607168.3717622-.5540093.874684-.5351305 1.3923396.0188788.5176555.2482919 1.0051614.6351305 1.3496604.7449991.6641395 1.8595862.6966237 2.642.077l7.329-5.854 7.33 5.854c.7824138.6196237 1.8970009.5871395 2.642-.077.3868386-.344499.6162517-.8320049.6351305-1.3496604.0188788-.5176556-.1744137-1.0205774-.5351305-1.3923396l-6.032-6.262 6.676-5.332c.7193267-.5632286 1.1770687-1.3960955 1.2669651-2.3052577.0898964-.9091623-.1958715-1.8155461-.7909651-2.5087423z"
+                              fill="#e64c3c"/>
+                    </g>
+                </g>
+            </svg>
+            <h2>Your message was not sent!</h2>
+            <h4>You have to complete the form to send a message. This would help us reach you faster! Wanna try that
+                again?</h4>
+        </div>
+        <div class="modal-footer">
+            <button class="apollo-button" id="modal-error-close">Try Again</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal-success" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <svg height="512" viewBox="0 0 58 58" width="512" xmlns="http://www.w3.org/2000/svg">
+                <g id="Page-1" fill="none" fill-rule="evenodd">
+                    <g id="055---message-error" fill-rule="nonzero">
+                        <path id="Shape"
+                              d="m51 17.91v-6.91c0-2.209139-1.790861-4-4-4h-8.55l-6.9-6c-1.4811489-1.21991279-3.6188511-1.21991279-5.1 0l-6.9 6h-8.55c-2.209139 0-4 1.790861-4 4v6.91l-7 6.09v30c0 2.209139 1.790861 4 4 4h50c2.209139 0 4-1.790861 4-4v-30z"
+                              fill="#f29c1f"/>
+                        <path id="Shape" d="m58 24v30c0 2.209139-1.790861 4-4 4h-.83l-18.13-15 15.96-13.21z"
+                              fill="#f0c419"/>
+                        <path id="Shape"
+                              d="m53.17 58h-48.34l18.13-15 3.49-2.89c1.4811489-1.2199128 3.6188511-1.2199128 5.1 0l3.49 2.89z"
+                              fill="#f3d55b"/>
+                        <path id="Shape" d="m22.96 43-18.13 15h-.83c-2.209139 0-4-1.790861-4-4v-30l7 5.79z"
+                              fill="#f0c419"/>
+                        <path id="Shape"
+                              d="m51 11v18.79l-15.96 13.21-3.49-2.89c-1.4811489-1.2199128-3.6188511-1.2199128-5.1 0l-3.49 2.89-15.96-13.21v-18.79c0-2.209139 1.790861-4 4-4h36c2.209139 0 4 1.790861 4 4z"
+                              fill="#f5efca"/>
+                    </g>
+                </g>
+            </svg>
+            <h2>Your message was sent!</h2>
+            <h4>We'll make sure to get back to you as soon as we can. Thank you!</h4>
+        </div>
+        <div class="modal-footer">
+            <button class="apollo-button" id="modal-success-close">Finish</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/floating-menu.js"></script>
+<script src="js/apollo.js"></script>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#send-mail").click(function (e) {
+            e.stopPropagation();
+            let name = $("input[name='name']").val(),
+                email = $("input[name='email']").val(),
+                subject = $("input[name='subject']").val(),
+                contact_number = $("input[name='contact-no']").val(),
+                message = $("[name='message']").val();
+
+            $("#send-mail").addClass("display-none");
+            $("#send-spinner").removeClass("display-none");
+
+            if (!name || !email || !subject || !contact_number || !message) {
+
+                $('.modal-error').addClass('opened');
+                return;
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "https://www.aesiph.com/sendMail.php",
+                data: {
+                    name,
+                    email,
+                    subject,
+                    contact_number,
+                    message
+                },
+                success: function (res) {
+
+                    $("#send-mail").removeClass("display-none");
+                    $("#send-spinner").addClass("display-none");
+                    $('.modal-error').addClass('opened');
+
+                    $("input[name='name']").val('');
+                    $("input[name='email']").val('');
+                    $("input[name='subject']").val('');
+                    $("input[name='contact-no']").val('');
+                    $("[name='message']").val('');
+                }
+            })
+
+        });
+
+        $('#modal-error-close').click(function (e) {
+            e.preventDefault();
+            $('.modal-error').removeClass('opened');
+            $("#send-mail").removeClass("display-none");
+            $("#send-spinner").addClass("display-none");
+        });
+
+        $('#modal-success-close').click(function (e) {
+            e.preventDefault();
+            $('.modal-success').removeClass('opened');
+        });
+    });
+</script>
+</html>
